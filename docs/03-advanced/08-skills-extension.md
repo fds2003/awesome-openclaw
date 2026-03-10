@@ -1251,7 +1251,80 @@ docker cp openclaw-2026:/root/.openclaw /root/openclaw-backup
 - ✅ 使用skill-scanner扫描恶意代码
 - ✅ 在测试环境中先试用
 
-### 8.5.3 故障排查
+### 8.5.3 ClawHavoc供应链攻击警告
+
+> ⚠️ **OpenClaw历史上最严重的安全事件** - 每个「养虾人」都必须了解
+
+ClawHavoc供应链攻击是OpenClaw历史上影响最广的安全事件，所有用户都应该了解其严重性和防护措施。
+
+#### 攻击时间线
+
+| 日期 | 事件 |
+|------|------|
+| 2026年1月27日 | 首个恶意Skill出现在ClawHub上，伪装成专业工具 |
+| 2026年1月28-30日 | 攻击者快速上传大量恶意Skill，利用ClawHub缺乏审查机制的漏洞 |
+| 2026年1月31日 | 攻击全面爆发，多名用户报告异常行为 |
+| 2026年2月1日 | Koi Security正式命名该攻击为「ClawHavoc」 |
+| 2026年2月上旬 | 社区展开大规模审计和清理 |
+
+#### 攻击规模
+
+| 指标 | 数据 |
+|------|------|
+| 当时ClawHub技能总数 | 约2,857个 |
+| 初步确认恶意Skills | 341个（约12%） |
+| 后续扫描发现的恶意Skills | 800+（约20%） |
+| 可追溯到同一协调行动的 | 335个 |
+| 受影响设备 | 135,000+ |
+
+> ⚠️ **注意**：ClawHub当时约20%的Skills被确认为恶意。这意味着如果你随机安装5个Skill，大概率至少有1个是恶意的。
+
+#### 攻击手法
+
+攻击者的手法相当精密，具有极强的欺骗性：
+
+1. **伪装成专业工具**：上传看似专业的Skill，名称和描述都很正常（如「advanced-code-review」「smart-scheduler」）
+2. **诱导安装恶意组件**：诱导用户安装后，Skill会建议安装一个「helper agent」来增强功能
+3. **植入信息窃取木马**：实际植入的是 Atomic macOS Stealer（AMOS）信息窃取木马
+4. **篡改持久记忆文件**：更危险的是，攻击专门针对OpenClaw的持久记忆文件（SOUL.md和MEMORY.md），篡改Agent的长期行为指令
+
+**篡改SOUL.md意味着你的Agent被「洗脑」了**。它的核心行为准则被改写，可能在后续所有交互中执行恶意操作，而你完全不知情。
+
+#### 防护措施
+
+**1. 安装前审查源码**
+
+永远不要盲目安装ClawHub上的Skill。去GitHub查看源码，确认SKILL.md中没有可疑的指令。特别注意任何要求额外安装「helper」或「agent」的内容。
+
+**2. 使用SecureClaw扫描**
+
+社区推出了社区开源安全工具SecureClaw，可以扫描已安装的Skills检查恶意内容。
+
+```bash
+# 安装SecureClaw
+npm install -g secureclaw
+
+# 扫描已安装的skills
+secureclaw scan ~/.openclaw/skills/
+```
+
+虽然不能100%防护，但能拦住已知的攻击模式。
+
+**3. 优先使用精选列表**
+
+参考 [awesome-openclaw-skills 项目](https://github.com/VoltAgent/awesome-openclaw-skills)（31.4K Stars）的精选列表，而不是直接在ClawHub上随意搜索。
+
+精选列表已经过滤掉了大量垃圾和恶意Skill。
+
+**4. 定期检查SOUL.md和MEMORY.md**
+
+养成习惯，定期检查这两个文件有没有被异常修改。如果发现不认识的内容，立即回滚并排查所有已安装的Skill。
+
+**关键认知**：OpenClaw的Skill本质上是受信任代码。一旦安装，它就拥有和你的OpenClaw实例相同的权限。没有沙箱隔离，没有权限分级。这和npm生态早期面临的问题一模一样，但后果可能更严重，因为OpenClaw可以访问你的邮件、日历、消息和文件系统。
+
+---
+
+### 8.5.4 故障排查
 
 **问题一：技能安装失败**
 ```bash

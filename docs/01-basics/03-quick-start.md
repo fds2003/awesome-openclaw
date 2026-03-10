@@ -598,6 +598,77 @@ AI 的名称、身份、主题设定。
 
 > 💡 **快速选择**：新手推荐 Claude Haiku 4.5 或 DeepSeek，性价比高且完全够用。详细的模型对比和切换策略请参考 [第11章：高级配置](../03-advanced/11-advanced-configuration.md)。
 
+---
+
+### 模型提供商总览
+
+OpenClaw支持十余家模型提供商，从国际顶尖到国产平价再到完全免费的本地模型，覆盖所有预算和场景。
+
+OpenClaw最大的优势之一是**模型自由**：你不被绑定在某一家厂商上。通过 `~/.openclaw/openclaw.json` 配置文件，可以灵活切换主力模型、设置Fallback备选链、甚至让不同任务走不同模型。
+
+#### 支持的模型提供商一览
+
+| 提供商 | 代表模型 | 输入价格 /1M tokens | 输出价格 /1M tokens | 接入方式 | 推荐场景 |
+|--------|----------|---------------------|---------------------|----------|----------|
+| **Anthropic** | Claude Sonnet 4.6 | $3.00 | $15.00 | 内置Provider | Agent任务效果最佳 |
+| **OpenAI** | GPT-5.4 | $2.50 | $15.00 | 内置Provider | 通用能力强 |
+| **Google** | Gemini 3 Pro | $2.00 | $12.00 | 内置Provider | 多模态、超长上下文 |
+| **DeepSeek** | DeepSeek-V3.2.2/V4 | $0.14 | $0.28 | 自定义Provider | 极致低价、代码任务 |
+| **智谱GLM** | GLM-5 | $0.80 | $2.56 | 内置（zai） | 国产最强代码能力 |
+| **通义千问** | Qwen 3.5 Max | $1.20 | $6.00 | 插件（OAuth） | 中文NLP、代码生成 |
+| **豆包** | Seed 2.0 Pro | $0.47 | $2.37 | 自定义Provider | 批量处理、低成本 |
+| **百度文心** | 文心 5.0 | ~$0.58 | ~$1.16 | 自定义（需适配） | 百度云生态用户 |
+| **Kimi** | Kimi K2.5 | $0.60 | $3.00 | 自定义Provider | 中文Agent、长上下文 |
+| **MiniMax** | MiniMax M2.5 | $0.50 | $2.00 | 自定义Provider | SWE-bench高分、性价比 |
+| **Ollama** | Qwen3.5-Coder:32B | 免费 | 免费 | 自动发现 | 隐私敏感、零成本 |
+| **LM Studio** | Devstral-24B | 免费 | 免费 | 自定义Provider | 本地GUI、模型测试 |
+
+#### 配置核心概念
+
+理解三个关键概念，就能掌握OpenClaw的模型配置：
+
+**1. 内置Provider**
+
+Anthropic、OpenAI、Google、智谱（zai）等无需额外配置，设置API Key即可使用。
+
+**2. 自定义Provider**
+
+DeepSeek、豆包、Kimi等需要在 `models.providers` 中手动添加。
+
+**3. Fallback机制**
+
+主模型不可用时自动切换到备选，这是最核心的省钱策略。
+
+```json
+{
+  "env": { "API_KEY_NAME": "sk-xxx" },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "provider/model-name",     // 主力模型
+        "fallbacks": ["provider/model-b"]    // 备选（主模型限速时自动切换）
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",                       // 保留内置provider，叠加自定义
+    "providers": {                         // 自定义provider配置
+      "deepseek": {
+        "baseUrl": "https://api.deepseek.com",
+        "apiKey": "sk-xxx",
+        "auth": "api-key",
+        "api": "openai-chat"
+      }
+    }
+  }
+}
+```
+
+> 💡 **核心建议**：
+> 设置 `models.mode: "merge"` 非常重要。它能保留所有内置Provider的同时叠加你的自定义配置。如果不设置，自定义配置会覆盖内置Provider。
+
+---
+
 ### 3.4.1 快速配置模型（命令行向导）
 
 > 🎯 **最简单的方式**：使用 `openclaw onboard` 命令启动配置向导，交互式配置模型。

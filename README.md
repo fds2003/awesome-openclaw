@@ -6,7 +6,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/xianyu110/awesome-openclaw-tutorial?style=social)](https://github.com/xianyu110/awesome-openclaw-tutorial)
 [![GitHub forks](https://img.shields.io/github/forks/xianyu110/awesome-openclaw-tutorial?style=social)](https://github.com/xianyu110/awesome-openclaw-tutorial)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-v1.0-green.svg)](https://github.com/xianyu110/awesome-openclaw-tutorial)
+[![Version](https://img.shields.io/badge/version-v2026.3.7-green.svg)](https://github.com/xianyu110/awesome-openclaw-tutorial)
 [![Status](https://img.shields.io/badge/status-完成-success.svg)](PROJECT-SUMMARY.md)
 
 ## 🎉 项目状态
@@ -23,23 +23,39 @@
 
 👉 [查看完整项目总结](PROJECT-SUMMARY.md) | [查看最新更新](CHANGELOG.md)
 
-## 🚨 2026.3.2 版本重要提示：升级后 AI 变"哑巴"？
+## 🚨 2026.3.7 版本重要提示：Gateway认证要求
 
-**OpenClaw 2026.3.2 踩雷警告**：该版本将工具权限和聊天能力做了隔离，默认 profile 改为 `messaging`（纯聊天模式），导致文件管理、命令执行等所有工具功能全部失效——AI 光聊天不干活。
+**OpenClaw 2026.3.7 Breaking Change**：Gateway认证现在要求显式设置 `gateway.auth.mode`。你必须明确选择 `token` 或 `password` 认证方式，不再有「无认证」的默认选项。
 
-**快速修复**：
+**配置方法**：
 
-- **有命令行环境**（本地/虚拟机/云服务器）：用 Codex 或 Claude Code 执行以下操作
+在 `~/.openclaw/openclaw.json` 中添加以下配置：
 
-  ```bash
-  openclaw config get tools        # 查看当前 profile
-  openclaw config set tools.profile full  # 切换为 full
-  openclaw gateway restart         # 重启生效
-  ```
+```json
+{
+  "gateway": {
+    "auth": {
+      "mode": "token",  // 或 "password"
+      "token": "your-secret-token"
+    }
+  }
+}
+```
 
-- **无命令行环境**（手机版等）：访问 `http://127.0.0.1:18789` → 左侧「配置」→ 切换到 Raw 格式 → 找到 `tools.profile` 改为 `full` → 保存重启
+**⚠️ 重要提示**：如果你从旧版本升级到 v2026.3.7 且没有配置认证，Gateway将拒绝启动。这是一个有意为之的设计，强制所有用户设置认证。
 
-**5 种 profile 说明**：`messaging`（仅聊天）/ `default`（默认工具集）/ `coding`（编程）/ `full`（完整工具+命令执行，推荐）/ `all`（全开）
+**快速修复（命令行）**：
+
+```bash
+# 设置token认证
+openclaw config set gateway.auth.mode token
+openclaw config set gateway.auth.token "your-secret-token"
+
+# 重启Gateway
+openclaw gateway restart
+```
+
+**Web UI配置**：访问 `http://127.0.0.1:18789` → 左侧「配置」→ 切换到 Raw 格式 → 添加上述配置 → 保存重启
 
 ---
 
@@ -143,7 +159,7 @@
 
 ## 📖 关于本教程
 
-> ⚠️ **版本说明**：由于 OpenClaw 仍在快速开发中，本教程基于 **2026.3.2** 版本编写。该版本经过充分验证，稳定可靠。不推荐使用 2026.2.12 版本（存在已知 bug）。
+> ⚠️ **版本说明**：由于 OpenClaw 仍在快速开发中，本教程基于 **2026.3.7** 版本编写。该版本经过充分验证，稳定可靠。
 
 > 💡 **重要前提**：OpenClaw 预装了 **49个内置技能（Skills）**，本教程中的大部分功能演示都基于这些内置技能。这些技能涵盖文件管理、知识管理、日程管理、自动化等核心场景，开箱即用。
 > 
@@ -364,6 +380,18 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 - 💰 成本优化：国产模型组合，月费用降至5-30元
 - ⚡ 性能调优：响应速度提升3倍
 
+#### [安全指南：安全模型与已知事件](docs/03-advanced/99-security-guide.md)
+> 了解OpenClaw的安全机制、已知安全事件和最佳实践
+- 🔒 安全模型：DM配对保护、群组沙箱、工具访问控制
+- 🚨 已知安全事件：CVE-2026-25253、ClawHavoc攻击、Anthropic封杀、谷歌封号
+- 🛡️ Skills安全：供应链攻击防护、安全审查最佳实践
+- ✅ 安全最佳实践：API密钥安全、数据隐私、网络安全、审计日志
+> 榨干OpenClaw性能，省钱又高效
+- 🎛️ Antigravity Manager：可视化配置管理
+- 🔄 多模型切换：不同任务用不同模型，省50%成本
+- 💰 成本优化：国产模型组合，月费用降至5-30元
+- ⚡ 性能调优：响应速度提升3倍
+
 ---
 
 ### 🎯 第四部分：实战案例（4章）
@@ -412,6 +440,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 - [附录D：社区资源导航](appendix/D-community-resources.md) - 官方文档、视频教程、交流群
 - [附录E：常见问题速查](appendix/E-common-problems.md) - 安装/API/Skills/性能问题解决
 - [附录F：避坑指南与最佳实践](appendix/F-best-practices.md) - 新手必看，前人经验总结
+- [安全指南](docs/03-advanced/99-security-guide.md) - 安全模型、已知事件、Skills安全与最佳实践
 - [附录G：文档链接验证](appendix/G-links-validation.md) - 所有链接状态检查
 - [附录H：配置文件模板](appendix/H-config-templates.md) - 开箱即用的配置示例
 - [附录I：思考题参考答案](appendix/I-thinking-questions-answers.md) - 各章节思考题详解
@@ -666,14 +695,14 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 ## 🆕 OpenClaw 最新版本
 
-**当前最新版本**：openclaw 2026.3.2（2026.3.2日）
+**当前最新���本**：openclaw 2026.3.7（2026.3.7日）
 
 **主要更新**：
-- ✅ iOS 支持（alpha 版本）
-- ✅ Grok (xAI) 作为 web_search 提供商
-- ✅ Agent 管理 RPC 方法（Web UI 可管理 agents）
-- ✅ 改进的 Telegram 支持
-- ✅ 多项安全性修复
+- ✅ Gateway认证要求（Breaking Change）：必须显式设置gateway.auth.mode
+- ✅ 模型提供商扩展：支持更多国产模型和自定义Provider
+- ✅ 安全性加固：修复多项安全漏洞，包括CVE-2026-25253
+- ✅ Skills安全：增强ClawHub审查机制
+- ✅ 工具权限隔离：2026.3.2引入的profile模式得到优化
 
 👉 [查看完整更新日志](https://github.com/openclaw/openclaw/releases)
 
@@ -717,7 +746,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 **副标题**：从零开始打造你的AI工作助手  
 **总字数**：353,000字（新增附录 61,000字 + 示例 16个文件）  
 **章节数**：15章 + 8附录  
-**适用OpenClaw版本**：2026.3.2（推荐稳定版，避免使用 2026.2.12）
+**适用OpenClaw版本**：2026.3.7（推荐稳定版）
 
 **本次更新亮点**：
 - ✅ 补充常见问题速查（22个问题完整解决方案）

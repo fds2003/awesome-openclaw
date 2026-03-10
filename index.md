@@ -10,8 +10,8 @@ title: 首页
 [![GitHub stars](https://img.shields.io/github/stars/xianyu110/awesome-openclaw-tutorial?style=social)](https://github.com/xianyu110/awesome-openclaw-tutorial)
 [![GitHub forks](https://img.shields.io/github/forks/xianyu110/awesome-openclaw-tutorial?style=social)](https://github.com/xianyu110/awesome-openclaw-tutorial)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-v1.4-green.svg)](https://github.com/xianyu110/awesome-openclaw-tutorial)
-[![OpenClaw](https://img.shields.io/badge/OpenClaw-2026.3.2-orange.svg)](https://openclaw.ai)
+[![Version](https://img.shields.io/badge/version-v2026.3.7-green.svg)](https://github.com/xianyu110/awesome-openclaw-tutorial)
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-2026.3.7-orange.svg)](https://openclaw.ai)
 
 ---
 
@@ -33,9 +33,43 @@ title: 首页
 
 ---
 
+## 🚨 2026.3.7 版本重要提示：Gateway认证要求
+
+**OpenClaw 2026.3.7 Breaking Change**：Gateway认证现在要求显式设置 `gateway.auth.mode`。你必须明确选择 `token` 或 `password` 认证方式，不再有「无认证」的默认选项。
+
+**配置方法**：
+
+在 `~/.openclaw/openclaw.json` 中添加以下配置：
+
+```json
+{
+  "gateway": {
+    "auth": {
+      "mode": "token",  // 或 "password"
+      "token": "your-secret-token"
+    }
+  }
+}
+```
+
+**⚠️ 重要提示**：如果你从旧版本升级到 v2026.3.7 且没有配置认证，Gateway将拒绝启动。这是一个有意为之的设计，强制所有用户设置认证。
+
+**快速修复（命令行��**：
+
+```bash
+# 设置token认证
+openclaw config set gateway.auth.mode token
+openclaw config set gateway.auth.token "your-secret-token"
+
+# 重启Gateway
+openclaw gateway restart
+```
+
+---
+
 ## 📖 关于本教程
 
-> ⚠️ **版本说明**：本教程基于 **OpenClaw 2026.3.2** 版本编写，经过充分验证，稳定可靠。不推荐使用 2026.2.12 版本（存在已知 bug）。
+> ⚠️ **版本说明**：本教程基于 **OpenClaw 2026.3.7** 版本编写，经过充分验证，稳定可靠。
 
 > 💡 **重要前提**：OpenClaw 预装了 **49 个内置技能（Skills）**，开箱即用，无需额外安装即可完成本教程大部分演示。
 
