@@ -1,10 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f3460"/>
-      <stop offset="100%" style="stop-color:#0d7377"/>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f3460"/>
+      <stop offset="100%" stop-color="#0d7377"/>
     </linearGradient>
   </defs>
-  <rect width="32" height="32" rx="6" fill="url(#bg)"/>
-  <text x="16" y="22" font-size="20" text-anchor="middle" fill="white">🦞</text>
+  <rect width="32" height="32" rx="6" fill="url(#g)"/>
+  <!-- 龙虾钳：双弧线 + 中间连接 -->
+  <path d="M22 8 Q26 16 22 24 M10 8 Q6 16 10 24 M16 10 L16 22" stroke="#fff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
 </svg>
