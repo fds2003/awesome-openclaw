@@ -8,259 +8,259 @@
   },
   {
     "title": "🔍 搜索功能使用指南",
-    "url": "/docs/search-guide.html",
+    "url": "/docs/search-guide/",
     "excerpt": "本教程的搜索功能专注于标题搜索，帮助你快速找到需要的章节",
     "content": "4. 组合搜索 💡 搜索示例 Q3：搜索结果太少或没有结果？ 🔍 搜索功能使用指南 示例 其他页面 Q4：搜索速度慢？ 2. 中文搜索 🚀 高级功能 示例2：查找配置相关内容 8个附录 URL参数搜索 3. 英文搜索 最后更新 解决方案 示例3：查找问题解决 检查拼写 🎯 搜索技巧 使用同义词 示例1：查找飞书相关内容 搜索功能使用指南 本教程的搜索功能专注于标题搜索 帮助你快速找到需要的章节 搜索说明 搜索范围 本站搜索功能仅搜索文档标题 不搜索正文内容 这样设计的原因 更精准 直接定位到章节标题 更快速 搜索速度更快 更清晰 结果更容易理解 支持的内容 搜索覆盖以下内容的标题 15章正文 第1 15章的所有标题 8个附录 附录A H的标题 示例文档 examples目录下的文档标题 其他页面 README 学习路径等 搜索技巧 1 使用关键词 推荐做法 飞书 配置 Skills 问题 API 不推荐 如何配置飞书Bot 太长 我想知道怎么安装 口语化 2 中文搜索 支持中文关键词搜索 3 英文搜索 支持英文关键词搜索 4 组合搜索 使用空格分隔多个关键词 5 模糊匹配 搜索支持前缀匹配 搜索示例 示例1 查找飞书相关内容 搜索词 飞书 预期结果 第9章 多平台集成 飞书 企微 钉钉 QQ一键接入 飞书Bot配置 飞书配置检查清单 等等 示例2 查找配置相关内容 搜索词 配置 预期结果 第2章 5分钟完成部署 第11章 高级配置 附录H 配置文件模板 等等 示例3 查找问题解决 搜索词 问题 预期结...",
     "category": "docs"
   },
   {
     "title": "OpenClaw 配置文件结构完整指南",
-    "url": "/docs/config-file-structure.html",
+    "url": "/docs/config-file-structure/",
     "excerpt": "text",
     "content": "📁 配置文件目录结构 3. 认证配置文件 重置全局配置 完整配置模板 手动创建配置文件 说明 查看日志 文档记录 添加认证（交互式） 旧版配置目录（已废弃） 4. OAuth 凭据文件 企业用户 2. Agent 专属配置 配置方式 新手用户 设置全局配置 查看生效的配置 设置 Agent 配置 问题1：配置后不生效 检查配置优先级 OpenClaw 配置文件结构完整指南 配置文件目录结构 全局配置目录 旧版配置目录 已废弃 注意 如果你的系统中还有 openclaw 目录 建议运行 openclaw doctor 进行迁移 配置文件详解 1 全局配置文件 路径 openclaw openclaw json 用途 所有 Agent 共享的全局配置 优先级 低于 Agent 专属配置 示例内容 text 查看命令 text 2 Agent 专属配置 路径 openclaw agents agentId openclaw json 用途 特定 Agent 的专属配置 优先级 高于全局配置 示例内容 text 查看命令 text 3 认证配置文件 路径 openclaw agents agentId agent auth profiles json 用途 存储 API Key 等认证信息 优先级 最高 覆盖其他配置 示例内容 text 管理命令 text 4 OAuth 凭据文件 路径 openclaw credentials oauth json 用途 存储 OAuth 登录凭据 旧版 优先级 低 建议使用 auth ...",
     "category": "docs"
   },
   {
     "title": "OpenClaw Skills 生态说明",
-    "url": "/docs/skills-ecosystem.html",
+    "url": "/docs/skills-ecosystem/",
     "excerpt": "数量: 49个",
     "content": "从内置 Skills 开始 安装 Skills 说明 选择 Skills 的原则 访问方式 最后更新 🏪 ClawHub 官方 Skills 官方 Skills 次之 📦 内置 Skills（预装） 行业覆盖 1800+个 位置 🏢 企业级 Skills（百度千帆） 🎯 推荐安装 或使用 clawhub（如果已发布） 数据来源 从 GitHub 克隆 适用 安装 数量 OpenClaw Skills 生态说明 Skills 分类统计 2026年2月 内置 Skills 预装 数量 49个 位置 OpenClaw 安装包自带 特点 开箱即用 无需安装 类型 文件管理 知识管理 日程管理 自动化等 说明 这些 Skills 在安装 OpenClaw 时就已经包含 可以直接使用 无需额外安装 查看命令 text ClawHub 官方 Skills 数量 93个 包含49个内置 位置 ClawHub 官方仓库 特点 官方维护 质量保证 安装 clawhub install skill name 说明 ClawHub 是 OpenClaw 官方的 Skills 市场 提供经过官方审核和维护的高质量 Skills 访问方式 text 社区 Skills 扩展 数量 1715 个 位置 GitHub 社区贡献 特点 功能丰富 需要筛选 安装 手动安装或通过 GitHub 说明 社区开发者贡献的 Skills 涵盖各种场景和需求 质量参差不齐 使用前建议查看评价和文档 安装方式 企业级 Skills 百度千帆 数量 1715个 位置 百度千帆平台 特点 企业级质量 ...",
     "category": "docs"
   },
   {
     "title": "OpenClaw API Key 配置完整指南",
-    "url": "/docs/api-key-config-guide.html",
+    "url": "/docs/api-key-config-guide/",
     "excerpt": "OpenClaw 支持多种 API Key 配置方式，每种方式都有其适用场景和优先级。",
     "content": "临时设置 使用命令行 OpenClaw API Key 配置完整指南 使用 Agent 专属配置 查看日志 方法2：配置命令 方法1：交互式命令（推荐新手） 2. 输入 API Key 直接设置 验证配置 定期轮换 API Key 🎯 方式一：环境变量（推荐：临时测试） 适用场景 企业用户 应急措施 自动化配置部署 新手用户 查看当前 provider 5. 发送测试消息 查看生效的配置 OpenClaw API Key 配置完整指南 配置方式概览 OpenClaw 支持多种 API Key 配置方式 每种方式都有其适用场景和优先级 配置方式对比 方式 优先级 适用场景 持久化 难度 环境变量 最高 临时测试 Docker CI CD 简单 Agent 专属配置 高 多 Agent 不同 Key 中等 全局配置 中 所有 Agent 共享 简单 配置向导 低 首次安装 简单 配置优先级 优先级顺序 从高到低 优先级示例 假设你同时配置了 text 实际使用 sk ant env 环境变量优先级最高 方式一 环境变量 推荐 临时测试 适用场景 临时测试不同的 API Key Docker 容器部署 CI CD 自动化 不想写入配置文件 需要最高优先级 配置方法 临时设置 当前会话 text 永久设置 写入 Shell 配置 macOS Linux zsh text macOS Linux bash text Windows PowerShell text 验证配置 text 优点和缺点 优点 最高优先级 覆盖所有其他配置 灵活 易于切换 适合 Docker 和 CI CD...",
     "category": "docs"
   },
   {
     "title": "第13章 高级自动化工作流（多Skills组合/知识图谱）",
-    "url": "/docs/04-practical-cases/13-advanced-automation.html",
+    "url": "/docs/04-practical-cases/13-advanced-automation/",
     "excerpt": "💡 本章目标：学习高级自动化工作流、多Skills组合应用、个人知识图谱构建和效率优化策略，让你成为真正的超级个体。 💡 核心价值：通过自动化工作流，将重复性工作交给OpenClaw，你只需要专注于创造性工作。 💡 核心价值：单个Skill是工具，多个Skills组合是系统。通过组合应用，实现1+1>2的效果。",
     "content": "12.1.3 自动化内容创作流程 第三步：创建任务管理对话 实战案例：文章转网页 坑3：依赖问题 567分钟 🎯 实战练习 生成可视化图谱 12.6.1 部署Agent到Moltbook社交网络 质量优化 实战案例：生成小红书封面 周一：生成本周选题 第一步：配置数据收集 步骤2：自动搜索和整理 实战案例 报告生成 12.5.1 场景描述 组合1：智能日报系统 第三步：执行学习工作流 手动定义关系 实践2：错误处理 第13章 高级自动化工作流 多Skills组合 知识图谱 本章目标 学习高级自动化工作流 多Skills组合应用 个人知识图谱构建和效率优化策略 让你成为真正的超级个体 本章内容 13 1 高级自动化工作流 13 2 多Skills组合应用 13 3 个人知识图谱构建 13 4 效率优化策略 13 5 5个高级自动化案例 ROI 9000 15900 12 5 Coding Agent工作流 12 1 高级自动化工作流 核心价值 通过自动化工作流 将重复性工作交给OpenClaw 你只需要专注于创造性工作 12 1 1 全自动信息收集系统 场景描述 作为超级个体 你需要持续学习和获取信息 但手动收集信息太耗时 通过OpenClaw构建全自动信息收集系统 每天早上自动生成个性化日报 工作流程 实战配置 第一步 安装必需的Skills text 第二步 配置信息源 创建配置文件 openclaw info sources json text 第三步 创建自动化脚本 创建 openclaw scripts daily digest sh text 第四步 配置定时任务 text 实战案例 技...",
     "category": "docs"
   },
   {
     "title": "第12章 5类人群的效率提升实战",
-    "url": "/docs/04-practical-cases/12-personal-productivity.html",
+    "url": "/docs/04-practical-cases/12-personal-productivity/",
     "excerpt": "💡 本章目标：通过5个真实场景，学习如何用OpenClaw打造个人效率提升系统，涵盖知识工作者、程序员、内容创作者、学生和超级个体的完整工作流。 💡 超级个体定位：一个人 + OpenClaw = 无限可能。本节展示云端OpenClaw的5大实战场景，让你的AI助手24小时不间断工作。",
     "content": "YouSkill - Skills搜索引擎 350分钟 成本优势 11.2.8 开发效率提升数据 安全提示 自动清理机制 6. 配置AI编程协作 1. 配置网页抓取Skills 3. 设置默认存储位置 2. 配置备忘录同步 OpenClaw方案 11.4.4 作业辅助完成 场景：学习新技术 5. 学习计划 效果对比 2. 配置笔记模板 11.4.6 科研项目管理 场景：系统化学习新技术 明确目标 循序渐进 第12章 5类人群的效率提升实战 本章目标 通过5个真实场景 学习如何用OpenClaw打造个人效率提升系统 涵盖知识工作者 程序员 内容创作者 学生和超级个体的完整工作流 本章内容 12 1 知识工作者高效工作流落地 12 2 程序员的开发助手实战 12 3 内容创作者的工作流优化 12 4 学生的学习助手应用 12 5 云上OpenClaw的5种正确打开方式 11 1 知识工作者的一天 11 1 1 场景描述 角色 张明 管理咨询顾问 工作特点 需要处理大量信息 频繁的会议和沟通 需要快速产出报告 知识管理要求高 痛点 信息分散 邮件 微信 文档到处都是 时间碎片 会议太多 难以专注 重复劳动 每天都在做相似的事 知识流失 看过的东西记不住 目标 信息集中管理 自动化重复任务 提升专注时间 构建个人知识库 11 1 2 早晨 日报推送和日程提醒 7 00 AM 起床后的第一件事 打开手机 OpenClaw已经推送了今日日报 配置方法 效果 每天早上7点自动推送 信息来源 日历 待办 RSS订阅 Notion笔记 推送到飞书 手机随时查看 节省时间 30分钟 天 11 1 3 上午 ...",
     "category": "docs"
   },
   {
     "title": "第15章 一人公司实战案例（内容创作/社群运营）",
-    "url": "/docs/04-practical-cases/15-solo-entrepreneur-cases.html",
+    "url": "/docs/04-practical-cases/15-solo-entrepreneur-cases/",
     "excerpt": "💡 本章目标：通过2个真实的一人公司案例，展示如何用OpenClaw实现商业闭环，从内容创作到社群运营，从0到1跑通完整业务流程。",
     "content": "创业者 下次改进 第四步：启动所有 Gateway 用词习惯 为什么需要自动化？ 15.3.3 配置步骤 创建Bot 检查状态 构思阶段 第三步：运行配置脚本 定价逻辑 15.2 案例2：AI 助手矩阵 - 多机器人多 Agent 模式 配置API Key daily-topic-push.sh 15.3.3 定价策略 15.3.5 实战案例：内容创作工作流 15.4.1 内容创作自动化模板 每天早上9点推送选题 最大的变化不是速度，是心态 SOUL.md 第15章 一人公司实战案例 内容创作 社群运营 本章目标 通过2个真实的一人公司案例 展示如何用OpenClaw实现商业闭环 从内容创作到社群运营 从0到1跑通完整业务流程 本章内容 15 1 案例1 10分钟完成全平台内容发布 15 2 案例2 1天冷启动100人付费社群 15 3 一人公司的核心方法论 15 4 可复制的自动化模板 15 1 案例1 10分钟完成全平台内容发布 15 1 1 案例背景 创作者 某内容创作者 AI编程领域 痛点 传统内容创作流程耗时3小时 目标 实现从选题到全平台发布的自动化 效果 3小时 10分钟 效率提升94 15 1 2 传统流程 vs 自动化流程 传统流程 3小时 自动化流程 10分钟 15 1 3 核心架构 墨笔Agent Agent定位 只管内容 图文 短视频 社交媒体 有自己的人格 嗅觉敏锐 表达锋利 有主见 读过所有历史文章 知道写作风格 用词习惯 标题偏好 绑定工具链 飞书API 发布工具API 社交媒体API 关键配置文件 1 SOUL md Agent的角色和边界 2 写作风格文件 3000字的风格规范 3 记忆系统 每天的工作记...",
     "category": "docs"
   },
   {
     "title": "第14章 创意应用探索（AI绘画/视频/翻译/数据分析）",
-    "url": "/docs/04-practical-cases/14-creative-applications.html",
+    "url": "/docs/04-practical-cases/14-creative-applications/",
     "excerpt": "💡 本章目标：探索OpenClaw在创意领域的应用，包括AI绘画工作流、视频脚本生成、多语言翻译和数据分析自动化。",
     "content": "2. 多场景适用 2. 配置可视化 4. venice-ai - 图像视频一体化 优化流程 必装Skills（优先级：⭐⭐⭐⭐⭐） 14.3.6 配置方法 工具 成本参考： 14.1.6 效率提升数据 重启OpenClaw 技巧1：使用配置文件管理Skills 实践1：定期头脑风暴 1. AI的局限性 配置优先级 3. senior-data-engineer - 数据工程 360分钟 3. 成本控制 92.3% 视频脚本生成 Skills 1,450分钟 第14章 创意应用探索 AI绘画 视频 翻译 数据分析 本章目标 探索OpenClaw在创意领域的应用 包括AI绘画工作流 视频脚本生成 多语言翻译和数据分析自动化 本章内容 14 1 AI绘画工作流 14 2 视频脚本生成 14 3 多语言翻译助手 14 4 数据分析自动化 14 5 多Agent头脑风暴 14 1 AI绘画工作流 14 1 1 场景描述 用户 内容创作者 设计师 自媒体运营 教程作者 需求 快速生成配图 白板图 Logo设计 批量处理 工具 Gemini图像生成 Banana Pro Midjourney Stable Diffusion 痛点 手机无法使用 专业绘图工具只有网页版 切换麻烦 需要在多个工具间切换 修改困难 每次修改都要重新上传 批量处理慢 一张一张处理效率低 成本高昂 专业工具订阅费贵 目标 手机随时画图 统一入口操作 语音修改图片 批量自动处理 成本可控 为什么选择Gemini图像生成 与传统绘图工具相比 Gemini有独特优势 特性 Gemini DALL E 3 Midjourney Banana Pro 集成方式 Chat API 专用AP...",
     "category": "docs"
   },
   {
     "title": "认识OpenClaw",
-    "url": "/docs/01-basics/01-introduction.html",
+    "url": "/docs/01-basics/01-introduction/",
     "excerpt": "在开始使用 OpenClaw之前，先了解它是什么，为什么要用它，以及它能带来什么。 ⚠️ 版本说明：由于 OpenClaw 仍在快速开发中，本教程基于 2026.3.2 版本编写。该版本经过充分验证，稳定可靠。 💡 重要前提：OpenClaw 预装了 49个内置技能（Skills），本教程中的大部分功能演示都基于这些内置技能。这些技能涵盖文件管理、知识管理、日程管理、自动化等核心场景，开箱即用。如...",
     "content": "成本可控 核心能力 4. 团队协作 无限扩展 本地文件访问 4. 多平台支持 Claude Code/Cursor 真实案例：为什么我选择OpenClaw 知识工作者 可用的Skills 一句话介绍 适用场景 OpenClaw 1.5 OpenClaw vs 其他AI工具能力对比 思考题 表 1-4 AI 工具能力维度对比 Skills扩展 如果你只需要简单对话，可以考虑 下一章 多模型切换 第1章 认识OpenClaw 在开始使用 OpenClaw之前 先了解它是什么 为什么要用它 以及它能带来什么 版本说明 由于 OpenClaw 仍在快速开发中 本教程基于 2026 3 2 版本编写 该版本经过充分验证 稳定可靠 重要前提 OpenClaw 预装了 49个内置技能 Skills 本教程中的大部分功能演示都基于这些内置技能 这些技能涵盖文件管理 知识管理 日程管理 自动化等核心场景 开箱即用 如果某些功能无法使用 请先确认相关技能是否已启用 详见 1 1 什么是OpenClaw 一句话介绍 OpenClaw 是一个开源的 AI 智能体 Gateway 网关 让你可以在本地部署 AI 助手 访问本地文件 通过多个平台 飞书 企微 QQ等 随时使用 项目名称演变 OpenClaw 原名 Clawdbot 因 Anthropic 商标顾虑在 2026年1月27日更名为 Moltbot 过渡名 最终在1月30日确定为 OpenClaw 三个名字本质是同一个项目 功能完全一致 核心能力 本地部署 在你的电脑上运行 数据隐私有保障 文件访问 可以搜索 读取 编辑你电脑上的文件 无限...",
     "category": "docs"
   },
   {
     "title": "环境搭建",
-    "url": "/docs/01-basics/02-installation.html",
+    "url": "/docs/01-basics/02-installation/",
     "excerpt": "本章将手把手教你安装 OpenClaw。 🍎 最佳体验：如果你有Mac电脑，强烈推荐本地部署，体验最好、功能最全！ 🪟 Windows用户：完全可用，但部分系统集成功能受限。",
     "content": "第2章：环境搭建 成本可控 升级最佳实践 如果版本过低，使用 nvm 升级 编程能力出色 在WSL2 Ubuntu终端中 检查网关是否运行 配置参数说明 说明 使用--force参数强制覆盖 OAuth 凭据（旧版） 第四步：访问WebUI 检查状态 Q1：安装时提示权限不足？ 第五步：配置到OpenClaw 运行入门向导 WSL2 + Ubuntu（强烈推荐） 4. 获取配置变量 使用第三方API服务 Docker 部署（可选） 第2章 环境搭建 本章将手把手教你安装 OpenClaw 前提条件与推荐配置 推荐配置 为了获得最佳体验 我们推荐 操作系统 Mac 强烈推荐 原生支持最完善 可操作日历 备忘录 截图等系统功能 Windows 完全可用 但部分系统集成功能受限 Linux 适合开发者 配置灵活 IM工具选择 国外用户 推荐 Telegram 适配度最好 功能最完整 国内用户 推荐 飞书 现代化 开发友好 功能丰富 备选 企业微信 钉钉 QQ 部署方式 有Mac电脑 推荐本地部署 体验最好 功能最全 无Mac或想24小时运行 推荐云端部署 成本低 稳定可靠 为什么推荐Mac OpenClaw在Mac上体验最好 因为 原生支持最完善 系统集成度高 可以操作Mac日历 备忘录 提醒事项 截图功能完美支持 与iPhone iPad无缝同步 文件管理更智能 开发环境配置简单 为什么推荐飞书 国内 现代化设计 用户体验好 开发者友好 API完善 支持富文本 文档 表格 消息推送稳定 免费版功能丰富 为什么推荐Telegram 国外 全球用户基础大 API最完善 功能最强 支持Bot功能丰富 消息推送实时 隐私保护...",
     "category": "docs"
   },
   {
     "title": "快速上手",
-    "url": "/docs/01-basics/03-quick-start.html",
+    "url": "/docs/01-basics/03-quick-start/",
     "excerpt": "恭喜你完成了安装！现在开始使用 OpenClaw，体验AI助手的魅力。 💡 新手建议：刚开始只需要配置 SOUL.md 和 USER.md 这两个文件就够了，其他文件可以后续根据需要再配置。 💡 提示：Web UI 方式更直观，适合新手；命令行方式更快捷，适合熟悉终端的用户。",
     "content": "编辑后生效 OpenClaw 的处理方式 配置核心概念 创建日历事件 每周检查 USER.md 补充 知识管理命令 理解OpenClaw的回复 编辑 USER.md 说明 保存网页 ❌ 不好的问题 What to call them: 查看已配置的模型 MEMORY.md 配置提及规则 限制 WhatsApp 访问 SOUL.md 验证配置 身份 第3章 快速上手 恭喜你完成了安装 现在开始使用 OpenClaw 体验AI助手的魅力 快速导航 3 1 第一次对话 启动OpenClaw 根据你的部署方式 选择对应的启动方法 云端部署用户 1 通过Web UI访问 2 通过IM平台访问 推荐 打开QQ 企微 飞书 钉钉 找到你配置的Bot 直接发消息 本地部署用户 1 检查Gateway状态 2 打开Web UI 或直接访问 发送第一条消息 在Web UI或IM平台中 发送 预期回复 OpenClaw会回复类似 验证成功的标志 收到AI的回复 右上角显示模型名称 Web UI 显示Token使用情况 理解OpenClaw的回复 OpenClaw的回复包含几个部分 1 文本内容 AI的回答 2 工具调用 如果有 执行的操作 3 Token统计 消耗的Token数量 示例 如何提出好问题 不好的问题 好的问题 提问技巧 1 明确目标 说清楚你想做什么 2 提供上下文 给出必要的背景信息 3 具体细节 说明具体要求 4 分步骤 复杂任务可以分步骤说明 示例对比 不好的问题 好的问题 找文件 帮我找一下我电脑上的一张发票 里面详情是买了一个...",
     "category": "docs"
   },
   {
     "title": "第7章 自动化工作流",
-    "url": "/docs/02-core-features/07-automation-workflow.html",
+    "url": "/docs/02-core-features/07-automation-workflow/",
     "excerpt": "💡 本章目标：学会使用 OpenClaw构建自动化工作流，实现定时任务、网站监控、日报推送和循环任务配置。",
     "content": "下一步 AI行业日报（2026-02-11） 定时任务设置 OpenClaw的监控机制 日报自动推送 🎯 实战练习 晚上8点推送 7.1.3 实战案例1：简单提醒 🛠️ 开源项目（2-3个） 7.4.2 循环任务类型 7.4 循环任务配置 智能调度 📰 今日要闻（3-5条） 日报的价值 OpenClaw的心跳机制 💡 常见问题 7.1.4 实战案例2：每周报告 7.3.6 推送渠道选择 Q3：日报内容不准确？ 7.3.2 日报内容设计 第7章 自动化工作流 本章目标 学会使用 OpenClaw构建自动化工作流 实现定时任务 网站监控 日报推送和循环任务配置 本章内容 7 1 定时任务设置 7 2 网站监控实战 7 3 日报自动推送 7 4 循环任务配置 7 1 定时任务设置 7 1 1 什么是定时任务 定义 定时任务是指在指定时间自动执行的任务 无需人工干预 OpenClaw的独特优势 心跳机制 可以主动发起对话 智能调度 自动管理任务执行 灵活配置 支持多种时间模式 可靠执行 失败自动重试 OpenClaw 与其他 AI 工具在自动化能力上的对比如表 7 1 所示 表 7 1 OpenClaw 与其他 AI 工具自动化能力对比 特性 OpenClaw ChatGPT Claude 主动对话 定时任务 本地执行 系统操作 7 1 2 心跳机制原理 OpenClaw的心跳机制 工作流程 1 OpenClaw后台运行 2 每分钟检查任务列表 3 到达设定时间时触发 4 执行任务并发送结果 5 记录执行日志 7 1 3 实战案例1 简单提醒 场景 你想在每天早上8点收到一条问候消息 OpenClaw操作 第二天早上8点 7...",
     "category": "docs"
   },
   {
     "title": "第6章 日程与任务管理",
-    "url": "/docs/02-core-features/06-schedule-management.html",
+    "url": "/docs/02-core-features/06-schedule-management/",
     "excerpt": "💡 本章目标：学会使用 OpenClaw管理日程和任务，实现日历自动创建、微信截图识别、批量日程导入和智能提醒设置。",
     "content": "6.3.5 数据验证和错误处理 6.2.5 实战案例3：多个事件批量创建 集成1：飞书提醒 新学期课程表 6.1.4 实战案例2：复杂日程创建 下一步 查看效果 🎯 实战练习 集成2：企业微信提醒 Q4：提醒没有收到？ 提醒时机选择 💡 常见问题 步骤2：OpenClaw导入 6.1.6 日历模板和最佳实践 6.4.4 与其他工具集成 表 6-1 不同事件类型的推荐提醒时机 微信截图识别 真实场景 自动创建 Q2：截图识别不准确？ 第6章 日程与任务管理 本章目标 学会使用 OpenClaw管理日程和任务 实现日历自动创建 微信截图识别 批量日程导入和智能提醒设置 本章内容 6 1 日历自动创建 6 2 微信截图识别 6 3 批量日程导入 6 4 提醒设置技巧 6 1 日历自动创建 6 1 1 为什么需要日历自动创建 在日常工作中 经常遇到这些场景 微信聊天中约定会议时间 邮件中收到活动邀请 群聊中讨论项目deadline 文档中记录的重要日期 传统做法 1 记住时间地点 2 打开日历App 3 手动创建事件 4 设置提醒 问题 容易遗忘 操作繁琐 信息容易丢失 效率低下 OpenClaw可以自动识别并创建日历事件 6 1 2 核心原理 OpenClaw的日历管理基于Mac日历Skills 关键能力 1 智能识别 自动识别时间 地点 人物 2 自动创建 一键创建日历事件 3 跨设备同步 Mac日历自动同步到iPhone 4 智能提醒 自动设置合理的提醒时间 6 1 3 实战案例1 文本创建日历 场景 你在微信上约了一个会议 微信聊天内容 OpenClaw操作 查看效果 打开Mac日历 你会看到 打开iPhone日...",
     "category": "docs"
   },
   {
     "title": "第5章 知识库管理",
-    "url": "/docs/02-core-features/05-knowledge-management.html",
+    "url": "/docs/02-core-features/05-knowledge-management/",
     "excerpt": "💡 本章目标：学会使用 OpenClaw构建个人知识库系统，实现网页文章存档、GitHub项目管理、论文笔记整理和跨设备同步。",
     "content": "Mac备忘录 APA格式 下月计划 5.1.2 核心原理 2.1 图像分类项目 影响力 下一步 关键图表 📚 本章内容 核心观点提取 场景2：多人协作 3. 工具库（8个） 🎯 实战练习 IEEE格式 重点论文 大模型发展综述 Multi-Head Attention 实验结果 1. 入门教程（3个） 2.1 早期探索（2017-2019） 第5章 知识库管理 本章目标 学会使用 OpenClaw构建个人知识库系统 实现网页文章存档 GitHub项目管理 论文笔记整理和跨设备同步 本章内容 5 1 网页文章存档 5 2 GitHub项目管理 5 3 论文笔记整理 5 4 跨设备同步方案 5 1 网页文章存档 5 1 1 为什么需要文章存档 在信息爆炸的时代 每天都会看到大量优质内容 技术博客文章 行业资讯报道 学习教程资料 开源项目文档 但问题是 网页可能失效 内容可能被删除 找不到之前看过的文章 无法跨设备查看 OpenClaw可以帮你解决这些问题 5 1 2 核心原理 OpenClaw的知识库管理基于以下原理 text 关键优势 1 自动抓取 无需手动复制粘贴 2 智能摘要 提取核心观点 3 结构化存储 便于后续检索 4 跨设备同步 Mac备忘录自动同步到iPhone 5 1 3 实战案例1 技术文章存档 场景 你在浏览技术博客时 看到一篇很棒的文章 想保存下来 传统做法 1 复制文章内容 2 打开备忘录 3 粘贴内容 4 手动整理格式 OpenClaw做法 1 复制文章链接 2 发送给OpenClaw 帮我把这篇文章...",
     "category": "docs"
   },
   {
     "title": "本地文件管理",
-    "url": "/docs/02-core-features/04-file-management.html",
+    "url": "/docs/02-core-features/04-file-management/",
     "excerpt": "OpenClaw最强大的功能之一，就是可以访问和管理你电脑上的文件。这是在线AI无法做到的。 我电脑里有一堆发票，特别乱，我忘了哪一张是买跑步机的了。 按过去，我得一张一张点开来搜索。真的，这事太呆逼了。",
     "content": "4.1 智能文件搜索 查找重复文件 查找大文件 批量数据整理 查找临时文件 第三步：设置月度检查 练习3：找下载文件 技巧1：描述内容而非文件名 错误处理和容错 关键要点 实施步骤 实战案例：释放100GB空间 第三步：删除 实战案例 第三步：查找重复文件 命令 文件自动整理 技巧4：使用排序 OpenClaw方法 下一章 第4章 本地文件管理 OpenClaw最强大的功能之一 就是可以访问和管理你电脑上的文件 这是在线AI无法做到的 快速导航 4 1 智能文件搜索 为什么需要智能搜索 传统的文件搜索只能按文件名查找 但经常遇到 忘记文件名 只记得内容 文件太多 不知道在哪个文件夹 需要同时搜索多种类型的文件 需要根据内容筛选文件 OpenClaw的智能搜索可以 根据文件内容搜索 理解自然语言描述 跨文件夹搜索 智能过滤和排序 场景1 找文件 真实案例 找发票 我电脑里有一堆发票 特别乱 我忘了哪一张是买跑步机的了 按过去 我得一张一张点开来搜索 真的 这事太呆逼了 传统方法 1 打开文件夹 2 一张一张点开图片 3 查看内容 4 找到目标文件 5 耗时 10 30分钟 OpenClaw方法 text OpenClaw执行过程 1 搜索所有图片文件 2 使用OCR识别文字 3 匹配 跑步机 关键词 4 发送找到的文件 结果 耗时 30 60秒 准确率 100 体验 太爽了 搜索命令示例 按内容搜索 text 按类型搜索 text 按时间搜索 text 按大小搜索 text 组合搜索 text 搜索技巧 技...",
     "category": "docs"
   },
   {
     "title": "第11章 高级配置（多模型切换/成本优化/性能调优）",
-    "url": "/docs/03-advanced/11-advanced-configuration.html",
+    "url": "/docs/03-advanced/11-advanced-configuration/",
     "excerpt": "💡 本章目标：掌握OpenClaw的高级配置技巧，包括Antigravity Manager配置、多模型切换、成本优化和性能调优。 🛡️ 高可用保障：通过配置主模型和备用模型，确保服务不中断。 🔐 账号管理：配置多个认证配置，实现账号轮换和负载均衡。",
     "content": "model（嵌入模型） 在 Antigravity Manager 中分别配置两个 API Key 列出 Agents ：\n1. 访问 [Google AI Studio](https://makersuite.google.com/app/apikey)\n2. 登录 Google 账号\n3. 创建 API Key\n4. 复制并粘贴到配置中\n\n#### fallback（备用提供商）\n\n```json\n{\n  \"fallback\": \"gemini\"\n}\n```text\n当主提供商失败时，使用备用提供商。\n\n#### model（嵌入模型）\n\n```json\n{\n  \"model\": \"gemini-embedding-001\"\n}\n```text 检查API是否正常 | ERNIE 4.0 | 百度生态、知识增强 | 中 |\n\n#### 本地模型\n\n| 提供商 | 模型 | 特点 | 价格 |\n|--------|------|------|------|\n| Claude Opus 4.5 Thinking 验证配置 切换到Opus Thinking模型 国产模型 11.8.3 渠道管理 查看当前默认模型 ：\n```bash\n# 查看记忆大小\nopenclaw memory stats\n\n# 清理旧记忆\nopenclaw memory clean --older-than 60d\n\n# 压缩记忆数据库\nopenclaw memory compact\n```text\n---\n\n## 11.4 成本优化方案\n\n### 11.4.1 Token消耗分析 ：\n\n```javascript\n// ~/.openclaw/tools/my-tool.js\nexport default {\n  name: \"my_custom_tool\",\n  description: \"我的自定义工具\",\n  parameters: {\n    type: \"object\",\n    properties: {\n      input: {\n        type: \"string\",\n        description: \"输入参数\"\n      }\n    },\n    required: [\"input\"]\n  },\n  async execute({ input }) {\n    // 工具逻辑\n    return {\n      success: true,\n      result: `处理结果: ${input}`\n    };\n  }\n};\n```text ：\n- `gemini`：Google Gemini（推荐，免费）\n- `openai`：OpenAI Embeddings\n- `local`：本地嵌入模型 设置日志级别 2. 路径限制 ：\n```\n⚠️ 内存占用高：\n- 清理缓存\n- 减少并发\n- 重启服务\n```text\n---\n\n## 📝 本章小结\n\n学习了OpenClaw的高级配置：\n1. Antigravity Manager配置\n2. 多模型切换策略\n3. 成本优化方案\n4. 性能调优技巧\n\n掌握这些技巧可以：\n- 降低50%以上成本\n- 提升60%响应速度\n- 提高系统稳定性\n\n---\n\n## 11.6 模型提供商配置详解\n\n> 🤖 order 字段 测试连接 第11章 高级配置 多模型切换 成本优化 性能调优 本章目标 掌握OpenClaw的高级配置技巧 包括Antigravity Manager配置 多模型切换 成本优化和性能调优 本章内容 11 1 Antigravity Manager完全配置指南 11 2 多模型切换策略 11 3 记忆搜索配置 Memory Search 11 4 成本优化方案 11 5 性能调优技巧 11 6 模型提供商配置详解 11 7 工具系统详解 11 8 CLI 命令完整参考 11 1 Antigravity Manager完全配置指南 11 1 1 什么是Antigravity Manager 定义 Antigravity Manager是1个AI API代理工具 可以让你通过本地服务访问多个AI模型 Claude Gemini GPT等 统一管理API 密钥和请求 项目地址 https github com lbjlaq Antigravity Manager 为什么要用Antigravity Manager 把OpenClaw和Antigravity Manager结合使用 你可以 本地部署 所有数...",
     "category": "docs"
   },
   {
     "title": "飞书Bot配置检查清单",
-    "url": "/docs/03-advanced/feishu-checklist.html",
+    "url": "/docs/03-advanced/feishu-checklist/",
     "excerpt": "✅ 使用本清单确保飞书Bot配置完整，避免常见问题 ⚠️ 特别注意：contact:contact.base:readonly 是最容易遗漏的权限！ > 如果缺少此权限：",
     "content": "检查事件订阅 提示 开发建议 4. 配置事件订阅 查看渠道列表 查看最近100行日志 1. 创建应用 实时查看日志 保护密钥 检查状态 最后更新 常见错误及解决 1. 添加飞书渠道 飞书Bot配置检查清单 1. 基础测试 选择 Feishu 定期更新 安全建议 📚 相关文档 🔍 故障排查 飞书Bot配置检查清单 使用本清单确保飞书Bot配置完整 避免常见问题 配置前准备 已安装 OpenClaw 版本 2026 3 2 已注册飞书开放平台账号 已创建企业 团队 个人也可以 网络可以访问飞书开放平台 应用创建 飞书开放平台 1 创建应用 登录飞书开放平台 https open feishu cn 点击 创建企业自建应用 填写应用信息 应用名称 如 OpenClaw助手 应用描述 应用图标 记录 App ID 和 App Secret 2 配置机器人 进入 应用功能 机器人 启用机器人功能 设置机器人名称 设置机器人描述 上传机器人头像 3 配置权限 重要 在 权限管理 页面 添加以下权限 必需权限 缺一不可 im message 获取与发送单聊 群组消息 im message send as bot 以应用身份发消息 contact contact base readonly 获取通讯录基本信息 特别注意 contact contact base readonly 是最容易遗漏的权限 如果缺少此权限 机器人无法识别用户 无法响应任何消息 日志中会出现 User not f...",
     "category": "docs"
   },
   {
     "title": "第8章 Skills扩展：让AI从\"能说\"到\"能做\"",
-    "url": "/docs/03-advanced/08-skills-extension.html",
+    "url": "/docs/03-advanced/08-skills-extension/",
     "excerpt": "💡 本章目标：深入理解Skills本质，学会使用ClawHub技能市场，掌握必装Skills推荐，学习自定义Skills开发和管理技巧。 ⚠️ 重要提示：没有Skills的OpenClaw只是1个聊天机器人，有了Skills才能真正成为你的AI助手！ 📊 Skills 生态概览：OpenClaw 拥有庞大的 Skills 生态系统，包括内置49个、官方93个、社区1715+个，总计1800+个可用...",
     "content": "8.6.2 技能开发最佳实践 工具安装 运行所有测试 2. Brave Search——实时信息检索 🔍 真实效果 安装Skills到工作区 🎯 实战练习 需求背景 2. 发布Skills 8.4.6 远程macOS节点（Linux Gateway） PDF 处理 竞品调研 8.9.1 为什么需要API服务Skills 更新指定Skill 1. McPorter——跨平台连接基石 🏗️ 适用场景 安装步骤 安装camsnap 实战案例 7. Google Workspace集成——办公自动化 📧 第8章 Skills扩展 让AI从 能说 到 能做 本章目标 深入理解Skills本质 学会使用ClawHub技能市场 掌握必装Skills推荐 学习自定义Skills开发和管理技巧 重要提示 没有Skills的OpenClaw只是1个聊天机器人 有了Skills才能真正成为你的AI助手 Skills 生态概览 OpenClaw 拥有庞大的 Skills 生态系统 包括内置49个 官方93个 社区1715 个 总计1800 个可用 Skills 详细分类和说明请参考 8 0 Skills本质 AI的 操作说明书 8 0 1 什么是Skills 简单理解 Skills 本质上就是教 AI 按固定流程做事的操作说明书 一旦写好 就能像函数一样反复调用 可以把 Skills 看成把 某类事情应该怎么专业做 这件事 封装成1个可复用 可自动触发的能力模块 形象比喻 把 AI 想象成1个刚毕业的聪明但没经验的实习生 普通Prompt 你每次都要从头教他怎么做事 今天教一遍 明天还得重新教 Rule 记忆 你给他贴一张 公司行为守则 在工位上 一直生效 但只能管态度和格式 MCP Tools 你给...",
     "category": "docs"
   },
   {
     "title": "第9章 多平台集成",
-    "url": "/docs/03-advanced/09-multi-platform-integration.html",
+    "url": "/docs/03-advanced/09-multi-platform-integration/",
     "excerpt": "💡 本章目标：学会将OpenClaw接入飞书、企业微信、钉钉、QQ等国内主流平台，实现随时随地使用AI助手。飞书作为最现代化、开发友好的平台，将优先介绍。 💡 状态：生产就绪，支持机器人私聊和群组，使用 WebSocket 长连接模式接收消息。 💡 Lark（国际版）：请使用 https://open.larksuite.com/app，并在配置中设置 domain: \"lark\"。",
     "content": "配置检查清单 数据分析师助手 说明 方法1：通过日志获取（推荐） 配置IP白名单 检查状态 检查当前 Agent 第三步：运行配置脚本 9.1.16.2 实现方案对比 构思阶段 🎯 实战练习 场景 3：创建多个专业助手 查看待审批的配对请求 ✅ Config valid 验证配置 9.5.2 创建Discord机器人 添加QQ配置 - Hooks：选择 session-memory 机器人在群组中不响应 - 输入机器人ID（BotAppID） 第9章 多平台集成 本章目标 学会将OpenClaw接入飞书 企业微信 钉钉 QQ等国内主流平台 实现随时随地使用AI助手 飞书作为最现代化 开发友好的平台 将优先介绍 本章内容 9 1 飞书Bot配置 9 1 1 飞书机器人介绍 9 1 2 快速开始 9 1 3 创建飞书应用 9 1 4 配置 OpenClaw 9 1 5 启动并测试 9 1 6 访问控制 9 1 7 群组配置 9 1 8 获取群组 用户 ID 9 1 9 高级配置 9 1 10 多账号配置 9 1 11 多 Agent 配置 9 1 11 1 配合飞书使用 9 1 11 2 实战案例 4个专业助手 9 1 11 3 配置注意事项 9 1 11 4 故障排查 9 1 11 5 配置对比 9 1 11 6 使用建议 9 1 11 7 本地多 Agent 管理 无需绑定 IM 平台 新增 9 2 企业微信Bot配置 9 3 钉钉Bot配置 9 4 QQ Bot配置 9 1 飞书Bot配置 状态 生产就绪 支持机器人私聊和群组 使用 WebSocket 长连接模式接收消息 9 1 1 飞书机器人介绍 飞书的优势 1 现代化...",
     "category": "docs"
   },
   {
     "title": "第10章 API服务集成（绘图/Notion/视频/语音）",
-    "url": "/docs/03-advanced/10-api-integration.html",
+    "url": "/docs/03-advanced/10-api-integration/",
     "excerpt": "接入第三方服务，让AI能力更强大",
     "content": "长文本自动分段 10.4.6 实战案例 安全建议 技巧1：明确风格 2. 使用环境变量 Insert content 4. 质量保证 问题1：API 调用返回 401 Unauthorized 5. video-cog - 长篇视频制作 适用场景 ClawHub 市场动态变化 Associated workspace ⚠️ 重要说明 创建Logo生成脚本 成本优化建议 获取今日主题 场景3：知识工作者（推荐） 下一章预告： 1. 渐进式安装 步骤5：测试连接 第10章 API服务集成 绘图 Notion 视频 语音 接入第三方服务 让AI能力更强大 本章将介绍如何将OpenClaw与各种第三方API服务集成 扩展AI的能力边界 重点介绍4个实用场景的配置方法 AI绘图 Notion数据同步 视频生成和语音合成 本章重点 API集成的配置方法和基础使用 详细的实战案例请参考第14章 创意应用探索 10 1 AI绘图服务集成 10 1 1 服务选择 OpenClaw支持多种AI绘图服务 服务 特点 成本 推荐场景 Gemini图像生成 中文好 白板图擅长 低 0 05 0 4元 张 教程配图 白板图 DALL E 3 质量高 风格多 中 创意设计 Midjourney 艺术性强 高 艺术创作 Stable Diffusion 开源免费 免费 需自建 批量生成 推荐 Gemini图像生成 集成简单 Chat API 成本低廉 中文支持好 适合教程配图 白板图 10 1 2 安装bananapro image gen Skill 方式1 从GitHub安装 推荐 text 方式2 使用npx命令 text 验证安装 text 10 1 3 配置AP...",
     "category": "docs"
   },
   {
     "title": "OpenClaw 安全指南",
-    "url": "/docs/03-advanced/99-security-guide.html",
+    "url": "/docs/03-advanced/99-security-guide/",
     "excerpt": "💡 本章目标：了解OpenClaw的安全机制、已知安全事件和最佳实践，保护你的数据和隐私 \"每月花250美元使用Gemini API，被封却毫无预警\"",
     "content": "敏感数据处�� 绝对不要 Skills安全 默认不信任机制 安装SecureClaw 注意 原理 启用审计 谷歌封号事件 每3个月更换一次API密钥 canvas 核心建议 最后更新 安全最佳实践 攻击手法 ✅ 设置文件权限 本章目标 denylist 时间线 CVE-2026-25253：远程代码执行漏洞 OpenClaw 安全指南 本章目标 了解OpenClaw的安全机制 已知安全事件和最佳实践 保护你的数据和隐私 目录 安全模型 OpenClaw的安全模型建立在 默认不信任 的基础上 但创始人Peter Steinberger坦言 This is all vibe code Prompt injection hasn t been solved There are absolute risks 默认不信任机制 OpenClaw对所有入站消息的默认态度是 不可信 具体体现在以下几个机制 DM配对保护 当一个未知的用户通过任何消息渠道 WhatsApp Telegram等 给你的OpenClaw发私信时 系统不会处理消息 取而代之的是返回一个配对码 pairing code 只有在你手动批准后 该用户的消息才会被处理 这防止了陌生人滥用你的Agent 以及你的API额度 群组沙箱模式 在群组环境中 OpenClaw默认运行在沙箱模式 每个群组的会话互相隔离 MEMORY md 长期记忆 只在私聊的main session中加载 群组看不到 可以配置requireMention 只有 提及...",
     "category": "docs"
   },
   {
     "title": "附录D 社区资源导航",
-    "url": "/appendix/D-community-resources.html",
+    "url": "/appendix/D-community-resources/",
     "excerpt": "💡 本附录目标：提供OpenClaw相关的社区资源导航，包括官方资源、中文社区、学习资源、工具和插件等，帮助你快速找到需要的资源。",
     "content": "技术特性 本附录目标 UP主 Skills开发教程 官方QQ群 第3周 安全提示 第二阶段（当前） 技术讨论 第2个月 Skills广场 📝 贡献指南 文章数 下载 📚 推荐学习路径 D.2 中文社区 创意展示 群数量 专栏名 新手路径（0-1个月） 附录D 社区资源导航 本附录目标 提供OpenClaw相关的社区资源导航 包括官方资源 中文社区 学习资源 工具和插件等 帮助你快速找到需要的资源 目录 D 1 官方资源 D 2 中文社区 D 3 学习资源 D 4 工具和插件 D 1 官方资源 D 1 1 官方网站 OpenClaw官网 网址 https openclaw ai 内容 产品介绍 功能特性 下载链接 最新动态 更新频率 每周更新 OpenClaw文档 网址 https docs openclaw ai 内容 安装教程 配置指南 API文档 Skills开发文档 常见问题 语言 中文 英文 更新频率 每天更新 推荐阅读 快速开始 https docs openclaw ai quick start 配置指南 https docs openclaw ai configuration Skills开发 https docs openclaw ai skills development ClawHub市场 网址 https hub openclaw ai 内容 Skills市场 Skills搜索 Skills评价 Skills下...",
     "category": "appendix"
   },
   {
     "title": "OpenClaw API Key 配置完整指南",
-    "url": "/appendix/K-api-key-config-guide.html",
+    "url": "/appendix/K-api-key-config-guide/",
     "excerpt": "OpenClaw 支持多种 API Key 配置方式，每种方式都有其适用场景和优先级。",
     "content": "临时设置 使用命令行 OpenClaw API Key 配置完整指南 使用 Agent 专属配置 查看日志 方法2：配置命令 方法1：交互式命令（推荐新手） 2. 输入 API Key 直接设置 验证配置 定期轮换 API Key 🎯 方式一：环境变量（推荐：临时测试） 适用场景 企业用户 应急措施 自动化配置部署 新手用户 查看当前 provider 5. 发送测试消息 查看生效的配置 OpenClaw API Key 配置完整指南 配置方式概览 OpenClaw 支持多种 API Key 配置方式 每种方式都有其适用场景和优先级 配置方式对比 方式 优先级 适用场景 持久化 难度 环境变量 最高 临时测试 Docker CI CD 简单 Agent 专属配置 高 多 Agent 不同 Key 中等 全局配置 中 所有 Agent 共享 简单 配置向导 低 首次安装 简单 配置优先级 优先级顺序 从高到低 优先级示例 假设你同时配置了 text 实际使用 sk ant env 环境变量优先级最高 方式一 环境变量 推荐 临时测试 适用场景 临时测试不同的 API Key Docker 容器部署 CI CD 自动化 不想写入配置文件 需要最高优先级 配置方法 临时设置 当前会话 text 永久设置 写入 Shell 配置 macOS Linux zsh text macOS Linux bash text Windows PowerShell text 验证配置 text 优点和缺点 优点 最高优先级 覆盖所有其他配置 灵活 易于切换 适合 Docker 和 CI CD...",
     "category": "appendix"
   },
   {
     "title": "飞书Bot配置检查清单",
-    "url": "/appendix/J-feishu-checklist.html",
+    "url": "/appendix/J-feishu-checklist/",
     "excerpt": "✅ 使用本清单确保飞书Bot配置完整，避免常见问题 ⚠️ 特别注意：contact:contact.base:readonly 是最容易遗漏的权限！ > 如果缺少此权限：",
     "content": "检查事件订阅 提示 开发建议 4. 配置事件订阅 查看渠道列表 查看最近100行日志 1. 创建应用 实时查看日志 保护密钥 检查状态 最后更新 常见错误及解决 1. 添加飞书渠道 飞书Bot配置检查清单 1. 基础测试 选择 Feishu 定期更新 安全建议 📚 相关文档 🔍 故障排查 飞书Bot配置检查清单 使用本清单确保飞书Bot配置完整 避免常见问题 配置前准备 已安装 OpenClaw 版本 2026 2 9 已注册飞书开放平台账号 已创建企业 团队 个人也可以 网络可以访问飞书开放平台 应用创建 飞书开放平台 1 创建应用 登录飞书开放平台 https open feishu cn 点击 创建企业自建应用 填写应用信息 应用名称 如 OpenClaw助手 应用描述 应用图标 记录 App ID 和 App Secret 2 配置机器人 进入 应用功能 机器人 启用机器人功能 设置机器人名称 设置机器人描述 上传机器人头像 3 配置权限 重要 在 权限管理 页面 添加以下权限 必需权限 缺一不可 im message 获取与发送单聊 群组消息 im message send as bot 以应用身份发消息 contact contact base readonly 获取通讯录基本信息 特别注意 contact contact base readonly 是最容易遗漏的权限 如果缺少此权限 机器人无法识别用户 无法响应任何消息 日志中会出现 User not f...",
     "category": "appendix"
   },
   {
     "title": "附录C API服务商对比",
-    "url": "/appendix/C-api-comparison.html",
+    "url": "/appendix/C-api-comparison/",
     "excerpt": "💡 本附录目标：提供OpenClaw可用的各类API服务商详细对比，包括国际主流API、国产大模型API、第三方API服务商和独享账号方案，帮助你选择最适合的API服务。",
     "content": "成本可控 本附录目标 价格最低 中文能力一般 注册门槛 账号风险 功能全面 C.1.1 Anthropic Claude API C.4.3 Claude Pro方案 价格对比（按100万Token计算） 中文能力强 免费额度超大 需要代理 知名度 代码能力强 支付方便 适用场景 按场景选择 实战案例 价格优惠 附录C API服务商对比 本附录目标 提供OpenClaw可用的各类API服务商详细对比 包括国际主流API 国产大模型API 第三方API服务商和独享账号方案 帮助你选择最适合的API服务 目录 C 1 国际主流API C 2 国产大模型API C 3 第三方API服务商 C 4 独享账号方案 C 1 国际主流API C 1 1 Anthropic Claude API 基本信息 官网 https www anthropic com API文档 https docs anthropic com 支持模型 Claude Opus 4 最强 Claude Sonnet 4 推荐 Claude Haiku 4 最快 价格信息 模型 输入价格 输出价格 上下文长度 Claude Opus 4 15 M tokens 75 M tokens 200K Claude Sonnet 4 3 M tokens 15 M tokens 200K Claude Haiku 4 0 25 M tokens 1 25 M tokens 200K 免费额度 新用户赠送 5额度 约可使用170万Token So...",
     "category": "appendix"
   },
   {
     "title": "附录G：文档链接验证",
-    "url": "/appendix/G-links-validation.html",
+    "url": "/appendix/G-links-validation/",
     "excerpt": "📋 链接检查：本附录列出教程中所有外部链接和内部链接的验证状态",
     "content": "其他文档 提取所有Markdown文件中的链接 开放平台 🔄 更新记录 示例 最后更新 云服务商 API服务商 附录 验证内部链接 📞 报告问题 提交Issue 2. 内部链接 第三部分：进阶技能 规范 视频教程 或使用现成工具 🔗 外部链接清单 工具和依赖 第一部分：零基础入门 附录G 文档链接验证 链接检查 本附录列出教程中所有外部链接和内部链接的验证状态 链接统计 类型 数量 状态 外部链接 45 已验证 内部链接 150 已验证 图片链接 50 已验证 总计 245 已验证 最后验证时间 2026年2月14日 外部链接清单 官方资源 链接 描述 状态 备注 https openclaw ai OpenClaw官网 正常 https docs openclaw ai 官方文档 正常 https github com openclaw openclaw GitHub仓库 正常 https clawhub ai ClawHub技能市场 正常 https www moltbook com Moltbook社区 正常 安装脚本 链接 描述 状态 备注 https openclaw ai install sh 一键安装脚本 正常 macOS Linux https openclaw ai install ps1 Windows安装脚本 正常 PowerShell https openclaw ai install cli sh CLI安装脚本 正常 命令行版本 AP...",
     "category": "appendix"
   },
   {
     "title": "避坑指南与最佳实践",
-    "url": "/appendix/F-best-practices.html",
+    "url": "/appendix/F-best-practices/",
     "excerpt": "💡 前人经验：这些是社区总结的最佳实践，帮你避开常见的坑",
     "content": "错误6：忽略版本更新 ✅ 或使用密钥管理工具 原则 前人经验 正确做法 ✅ 限制访问范围 时间节省 策略3：批量处理 实施方案 成本节省 3. 记录执行日志 场景1：日常对话 4. 审计日志 ✅ 设置通知 不要把包含API密钥的配置文件发给别人 ✅ 不要提交到Git 适用场景 ✅ 定期轮换密钥 场景2：代码生成 2. 数据隐私 第17章 避坑指南与最佳实践 前人经验 这些是社区总结的最佳实践 帮你避开常见的坑 目录 新手常犯的10个错误 错误1 不看文档就开始用 问题 不了解基本概念就开始配置 遇到问题不知道如何解决 浪费大量时间试错 正确做法 1 先阅读 2 按照操作 3 遇到问题先查 时间节省 至少节省2 3小时的试错时间 错误2 使用最贵的模型做所有事情 问题 正确做法 成本对比 任务类型 错误选择 正确选择 成本差异 文件搜索 GPT 4 0 03 1K DeepSeek 0 001 1K 30倍 简单问答 GPT 4 DeepSeek 30倍 代码生成 GPT 4 DeepSeek 30倍 复杂推理 GPT 4 GPT 4 相同 错误3 不配置工作目录 问题 OpenClaw可以访问所有文件 误删除重要文件的风险 隐私泄露风险 正确做法 错误4 API密钥明文存储 问题 正确做法 错误5 不定期清理缓存 问题 缓存占用大量磁盘空间 内存占用越来越高 响应速度变慢 正确做法 错误6 忽略版本更新 问题 错过重要功能更新 错过安全补丁 遇到已修复的bug 正确做法 错误7 不备份配置 问题 配置丢失后需...",
     "category": "appendix"
   },
   {
     "title": "附录 I：思考题参考答案",
-    "url": "/appendix/I-thinking-questions-answers.html",
+    "url": "/appendix/I-thinking-questions-answers/",
     "excerpt": "💡 本附录提供教程中各章节思考题的参考答案，帮助读者更好地理解和应用 OpenClaw。",
     "content": "场景1：个人知识管理 时间节省 4. 实践建议 质量的保证 问题2：OpenClaw的哪个功能最吸引你？ 多平台发布 成本节省 中度可自动化（50-80%） 关键要点 知识工作者 工作体验 方案3：设计创作流程 思考题 1. 明确分工原则 日程管理 2. 质量评估标准 可自动化任务清单 人机协作 问题3：AI创作的内容如何保证质量？ 平衡策略 附录 I 思考题参考答案 本附录提供教程中各章节思考题的参考答案 帮助读者更好地理解和应用 OpenClaw 第1章 认识 OpenClaw 思考题 1 你目前使用什么AI工具 遇到了什么问题 2 OpenClaw的哪个功能最吸引你 3 你打算用OpenClaw做什么 参考答案 问题1 你目前使用什么AI工具 遇到了什么问题 常见AI工具及其问题 ChatGPT 优点 对话流畅 知识丰富 问题 无法访问本地文件 无法执行系统操作 需要手动复制粘贴内容 无法自动化工作流 Claude 优点 长文本处理能力强 代码质量高 问题 同样无法访问本地文件 无法与其他工具集成 价格较高 20 月 Cursor 优点 代码编辑体验好 问题 仅限于代码编辑场景 无法处理其他类型任务 无法跨平台使用 共同痛点 1 数据孤岛 AI无法访问本地文件和数据 2 手动操作 需要频繁复制粘贴 3 单一场景 只能在特定场景使用 4 无法自动化 无法设置定时任务和自动化流程 问题2 OpenClaw的哪个功能最吸引你 不同用户的选择 知识工作者 最吸引 本地文件访问 原因 可以快速搜索和整理大量文档 场景 论文管理 ...",
     "category": "appendix"
   },
   {
     "title": "附录A 命令速查表",
-    "url": "/appendix/A-command-reference.html",
+    "url": "/appendix/A-command-reference/",
     "excerpt": "💡 本附录目标：提供OpenClaw常用命令的快速参考，方便日常使用时查阅。",
     "content": "录制屏幕 OpenClaw会自动读取这些环境变量 导入对话历史 A.1.1 启动与停止 搜索文件（按大小） 添加模型 A.5.2 插件管理 仅删除工作区（移除agent/workspace文件） 启用插件（需要重启网关） 3. 启用自动清理 查看日志 2. 安装Skills 2. 查看日志 重启OpenClaw 5. 检查性能 禁用插件 整理下载文件夹 性能诊断 技巧4：批量操作 批量更新Skills 附录A 命令速查表 本附录目标 提供OpenClaw常用命令的快速参考 方便日常使用时查阅 目录 A 1 基础命令 A 2 文件操作命令 A 3 系统操作命令 A 4 Skills管理命令 A 5 高级命令 A 1 基础命令 A 1 1 启动与停止 A 1 2 版本与帮助 A 1 3 配置管理 A 1 4 Gateway管理 A 1 5 对话管理 A 1 6 通道管理 A 1 7 日志管理 清理旧对话 保留最近N条 openclaw conversation clean keep 20 导出对话历史 openclaw conversation export conversation json 导入对话历史 openclaw conversation import conversation json bash 搜索文件 按名称 帮我找一下名为 报告 pdf 的文件 搜索文件 按内容 帮我找一下包含 OpenClaw 的文件 搜索文件 按类型 帮我找一下所有的PDF文件 搜索文件 按时间 帮我找一下最近7天修改的文件 搜索文件 按大小 帮我找一下大于100MB的文件 组合搜索 帮我找一下最...",
     "category": "appendix"
   },
   {
     "title": "OpenClaw 配置文件结构完整指南",
-    "url": "/appendix/L-config-file-structure.html",
+    "url": "/appendix/L-config-file-structure/",
     "excerpt": "text",
     "content": "📁 配置文件目录结构 3. 认证配置文件 重置全局配置 完整配置模板 手动创建配置文件 说明 查看日志 文档记录 添加认证（交互式） 旧版配置目录（已废弃） 4. OAuth 凭据文件 企业用户 2. Agent 专属配置 配置方式 新手用户 设置全局配置 查看生效的配置 设置 Agent 配置 问题1：配置后不生效 检查配置优先级 OpenClaw 配置文件结构完整指南 配置文件目录结构 全局配置目录 旧版配置目录 已废弃 注意 如果你的系统中还有 openclaw 目录 建议运行 openclaw doctor 进行迁移 配置文件详解 1 全局配置文件 路径 openclaw openclaw json 用途 所有 Agent 共享的全局配置 优先级 低于 Agent 专属配置 示例内容 text 查看命令 text 2 Agent 专属配置 路径 openclaw agents agentId openclaw json 用途 特定 Agent 的专属配置 优先级 高于全局配置 示例内容 text 查看命令 text 3 认证配置文件 路径 openclaw agents agentId agent auth profiles json 用途 存储 API Key 等认证信息 优先级 最高 覆盖其他配置 示例内容 text 管理命令 text 4 OAuth 凭据文件 路径 openclaw credentials oauth json 用途 存储 OAuth 登录凭据 旧版 优先级 低 建议使用 auth ...",
     "category": "appendix"
   },
   {
     "title": "附录H：配置文件模板和示例",
-    "url": "/appendix/H-config-templates.html",
+    "url": "/appendix/H-config-templates/",
     "excerpt": "📝 开箱即用：复制这些配置模板，快速开始使用OpenClaw",
     "content": "1. 基础Skills配置 🔑 API配置模板 文件名：validate-config.sh 文件位置 🧩 Skills配置模板 1. 性能优化配置 配置验证脚本 最后更新 🔄 自动化配置模板 2. 完整基础配置 1. 定时任务配置 📚 相关资源 附录H：配置文件模板和示例 🎯 基础配置模板 验证JSON格式 2. 多API配置（推荐） 4. 智能路由配置 2. 安全配置 3. 钉钉Bot配置 📋 目录 附录H 配置文件模板和示例 开箱即用 复制这些配置模板 快速开始使用OpenClaw 目录 基础配置模板 1 最小配置 新手推荐 文件位置 openclaw config json 使用说明 1 替换 YOUR DEEPSEEK API KEY 为你的API密钥 2 保存到 openclaw config json 3 运行 openclaw gateway run 2 完整基础配置 API配置模板 1 单一API配置 DeepSeek 2 多API配置 推荐 3 中转API配置 4 智能路由配置 多平台集成配置 1 飞书Bot配置 2 企业微信Bot配置 3 钉钉Bot配置 4 Telegram Bot配置 5 多Agent配置 Skills配置模板 1 基础Skills配置 2 Skills详细配置 自动化配置模板 1 定时任务配置 2 网站监控配置 3 文件监控配置 高级配置模板 1 性能优化配置 2 安全配置 3 监控和日志配置 4 备份和恢复配置 完整配置示例 生产环境配置 配置工具 配置验证脚本 配置生成器 相关资源 最后更新 2026年2月14日",
     "category": "appendix"
   },
   {
     "title": "OpenClaw Skills 生态说明",
-    "url": "/appendix/N-skills-ecosystem.html",
+    "url": "/appendix/N-skills-ecosystem/",
     "excerpt": "数量: 49个",
     "content": "从内置 Skills 开始 安装 Skills 说明 选择 Skills 的原则 访问方式 最后更新 🏪 ClawHub 官方 Skills 官方 Skills 次之 📦 内置 Skills（预装） 行业覆盖 1800+个 位置 🏢 企业级 Skills（百度千帆） 🎯 推荐安装 或使用 clawhub（如果已发布） 数据来源 从 GitHub 克隆 适用 安装 数量 OpenClaw Skills 生态说明 Skills 分类统计 2026年2月 内置 Skills 预装 数量 49个 位置 OpenClaw 安装包自带 特点 开箱即用 无需安装 类型 文件管理 知识管理 日程管理 自动化等 说明 这些 Skills 在安装 OpenClaw 时就已经包含 可以直接使用 无需额外安装 查看命令 text ClawHub 官方 Skills 数量 93个 包含49个内置 位置 ClawHub 官方仓库 特点 官方维护 质量保证 安装 clawhub install skill name 说明 ClawHub 是 OpenClaw 官方的 Skills 市场 提供经过官方审核和维护的高质量 Skills 访问方式 text 社区 Skills 扩展 数量 1715 个 位置 GitHub 社区贡献 特点 功能丰富 需要筛选 安装 手动安装或通过 GitHub 说明 社区开发者贡献的 Skills 涵盖各种场景和需求 质量参差不齐 使用前建议查看评价和文档 安装方式 企业级 Skills 百度千帆 数量 1715个 位置 百度千帆平台 特点 企业级质量 ...",
     "category": "appendix"
   },
   {
     "title": "附录B 常用Skills清单",
-    "url": "/appendix/B-skills-catalog.html",
+    "url": "/appendix/B-skills-catalog/",
     "excerpt": "💡 本附录目标：提供OpenClaw常用Skills的详细清单，包括官方Skills和社区热门Skills，帮助你快速找到需要的功能。",
     "content": "📸 peekaboo（截图工具） code-assistant 🔊 tts（语音合成） 📝 notes（备忘录集成） 本附录目标 提示 B.1.2 文件处理类 个人效率提升 🐛 debug-helper（调试助手） banana 数据分析 📧 mail（邮件集成） B.2.1 通讯工具类 📈 excel-tools（Excel工具） pdf-tools 开发者 组合3：开发者套装 B.3.1 必装Skills（Top 10） B.2.3 数据处理类 附录B 常用Skills清单 附录B 常用Skills清单 本附录目标 提供OpenClaw常用Skills的详细清单 包括官方Skills和社区热门Skills 帮助你快速找到需要的功能 目录 B 1 官方Skills B 2 社区热门Skills B 3 Skills评价和推荐 B 1 官方Skills B 1 1 系统集成类 peekaboo 截图工具 功能 截取全屏 截取窗口 截取区域 延迟截图 安装 使用示例 推荐指数 适用场景 需要验证OpenClaw的操作 需要记录屏幕内容 需要调试问题 notes 备忘录集成 功能 创建备忘录 搜索备忘录 更新备忘录 删除备忘录 安装 使用示例 推荐指数 适用场景 需要快速记录信息 需要跨设备同步 需要搜索历史记录 calendar 日历集成 功能 创建日历事件 查询日程安排 更新事件 删除事件 安装 使用示例 推荐指数 适用场景 需要管理日程 需要设置提醒 需要跨设备同步 mail 邮件集成 功能 发送邮件 读取邮件 搜索邮件 管理邮件 安装 使用示例 推荐指数 适用场景 需要快速发送邮件 需要搜索邮件 需要自动化邮件处理 B 1 2 文件处理类 file man...",
     "category": "appendix"
   },
   {
     "title": "常见问题速查",
-    "url": "/appendix/E-common-problems.html",
+    "url": "/appendix/E-common-problems/",
     "excerpt": "💡 快速解决：遇到问题？先在这里找答案，90%的问题都能快速解决 💡 特别注意：contact:contact.base:readonly 权限经常被遗漏！ > 这个权限用于获取用户基本信息，如果缺少：",
     "content": "Linux (ufw) 或指定目录 方案3：配置文件中修改 查看日志 检查配置文件位置 macOS (使用 Homebrew) 确保绑定到正确的地址 问题14：飞书Bot不回复 5种 profile 说明 方案2：手动安装 清理所有缓存 查看当前搜索路径 或查看完整日志 查看飞书相关日志 4. 提供信息 验证配置 📁 文件操作问题 步骤2：手动安装 方案3：优化网络 查看最近的错误 第16章 常见问题速查 快速解决 遇到问题 先在这里找答案 90 的问题都能快速解决 目录 安装配置问题 问题1 Node js版本不对 症状 原因 OpenClaw 需要 Node js 22 解决方案 验证 node version 应显示 v22 x x 问题2 npm install 失败 症状 原因 权限不足或网络问题 解决方案 方案1 修复权限 方案2 使用国内镜像 方案3 清除缓存重试 问题3 安装脚本卡住不动 症状 原因 网络连接问题或下载速度慢 解决方案 方案1 使用代理 方案2 手动安装 方案3 使用 npm 直接安装 问题4 配置文件找不到 症状 原因 配置文件路径错误或未创建 解决方案 API连接问题 问题5 API密钥无效 症状 原因 API密钥错误或已过期 解决方案 步骤1 验证API密钥 步骤2 测试API连接 步骤3 检查API密钥格式 OpenAI sk 开头 DeepSeek sk 开头 Kimi 通常是长字符串 确保没有多余的空格或换行符 问题6 API请求超时 症状 原因 网络连接慢或API服务器响应慢 解决方案 方案1 增加超时时间 方案2 使...",
     "category": "appendix"
   },
   {
     "title": "🔍 搜索功能使用指南",
-    "url": "/appendix/M-search-guide.html",
+    "url": "/appendix/M-search-guide/",
     "excerpt": "本教程的搜索功能专注于标题搜索，帮助你快速找到需要的章节",
     "content": "4. 组合搜索 💡 搜索示例 Q3：搜索结果太少或没有结果？ 🔍 搜索功能使用指南 示例 其他页面 Q4：搜索速度慢？ 2. 中文搜索 🚀 高级功能 示例2：查找配置相关内容 8个附录 URL参数搜索 3. 英文搜索 最后更新 解决方案 示例3：查找问题解决 检查拼写 🎯 搜索技巧 使用同义词 示例1：查找飞书相关内容 搜索功能使用指南 本教程的搜索功能专注于标题搜索 帮助你快速找到需要的章节 搜索说明 搜索范围 本站搜索功能仅搜索文档标题 不搜索正文内容 这样设计的原因 更精准 直接定位到章节标题 更快速 搜索速度更快 更清晰 结果更容易理解 支持的内容 搜索覆盖以下内容的标题 15章正文 第1 15章的所有标题 8个附录 附录A H的标题 示例文档 examples目录下的文档标题 其他页面 README 学习路径等 搜索技巧 1 使用关键词 推荐做法 飞书 配置 Skills 问题 API 不推荐 如何配置飞书Bot 太长 我想知道怎么安装 口语化 2 中文搜索 支持中文关键词搜索 3 英文搜索 支持英文关键词搜索 4 组合搜索 使用空格分隔多个关键词 5 模糊匹配 搜索支持前缀匹配 搜索示例 示例1 查找飞书相关内容 搜索词 飞书 预期结果 第9章 多平台集成 飞书 企微 钉钉 QQ一键接入 飞书Bot配置 飞书配置检查清单 等等 示例2 查找配置相关内容 搜索词 配置 预期结果 第2章 5分钟完成部署 第11章 高级配置 附录H 配置文件模板 等等 示例3 查找问题解决 搜索词 问题 预期结...",
     "category": "appendix"
   },
   {
     "title": "未命名文档",
-    "url": "/appendix/F-link-validation.html",
+    "url": "/appendix/F-link-validation/",
     "excerpt": "",
     "content": " ",
     "category": "appendix"
   },
   {
     "title": "附录E：配置文件模板与示例",
-    "url": "/appendix/E-config-templates.html",
+    "url": "/appendix/E-config-templates/",
     "excerpt": "💡 开箱即用：复制这些配置模板，快速完成OpenClaw配置",
     "content": "🚀 快速部署脚本 文件位置 下载配置模板 1. 多Agent配置 超级个体完整配置 最后更新 3. 中转API配置（推荐） 2. 代理和网络配置 3. 安全和隐私配置 5. 多平台同时配置 2. 完整基础配置 1. 国产模型组合（省钱方案） OpenClaw 快速配置脚本 📚 相关资源 2. Skills双幻神配置 🎯 基础配置模板 🤖 多模型配置 启动Gateway 2. 国际模型配置 提示用户输入API密钥 附录E 配置文件模板与示例 开箱即用 复制这些配置模板 快速完成OpenClaw配置 目录 基础配置模板 1 最小化配置 新手推荐 文件位置 openclaw config json 使用说明 1 替换 sk your deepseek api key 为你的实际API密钥 2 保存到 openclaw config json 3 运行 openclaw gateway run 2 完整基础配置 多模型配置 1 国产模型组合 省钱方案 成本估算 日常对话 DeepSeek 0 001元 1K tokens 长文档 Kimi 0 012元 1K tokens 代码任务 DeepSeek Coder 0 001元 1K tokens 月均成本 5 30元 2 国际模型配置 3 中转API配置 推荐 优势 一个API密钥访问所有模型 统一计费 成本更低 国内访问速度快 自动负载均衡 多平台集成配置 1 飞书Bot配置 获取参数步骤 1 访问 2 创建企业自建应用 3 获取 App ID 和 App Secret 4 配置事件订阅和权限 5 设置回调地址 2 企业微信Bot配置 3 钉钉Bot...",
     "category": "appendix"

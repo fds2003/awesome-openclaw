@@ -187,6 +187,7 @@ mark {
 (function() {
   let searchData = [];
   let isLoading = false;
+  let pendingQuery = null; // 索引未就绪时暂存用户点击的搜索词，加载完成后自动执行
 
   // 简单的中文分词（按字符和常见词组）
   function tokenize(text) {
@@ -267,6 +268,7 @@ mark {
     }
 
     if (searchData.length === 0) {
+      pendingQuery = query.trim();
       document.getElementById('search-results').innerHTML =
         '<p class="loading">⏳ 搜索索引加载中，请稍候...</p>';
       return;
@@ -302,7 +304,7 @@ mark {
           </ul>
           <p style="margin-top: 1rem;">
             <a href="/">浏览教程目录</a> ·
-            <a href="/appendix/A-command-reference.html">命令速查表</a>
+            <a href="/appendix/A-command-reference/">命令速查表</a>
           </p>
         </div>
       `;
@@ -386,6 +388,11 @@ mark {
         searchData = data;
         console.log(`✅ 成功加载搜索索引: ${file}`, `共 ${data.length} 个文档`);
         isLoading = false;
+        if (pendingQuery) {
+          const q = pendingQuery;
+          pendingQuery = null;
+          performSearch(q);
+        }
         return;
 
       } catch (error) {
@@ -416,6 +423,7 @@ mark {
       </div>
     `;
     isLoading = false;
+    pendingQuery = null;
   }
 
   // 初始化
