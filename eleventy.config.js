@@ -3,6 +3,16 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
 
+  // 文章集合：docs/articles/ 下的 .md，排除 index.md，按日期倒序
+  eleventyConfig.addCollection("articles", function (collectionApi) {
+    const all = collectionApi.getAll();
+    const norm = (p) => (p.inputPath || "").replace(/\\/g, "/");
+    const articles = all.filter(
+      (p) => norm(p).includes("docs/articles") && !norm(p).endsWith("index.md") && !norm(p).endsWith("README.md")
+    );
+    return articles.sort((a, b) => (b.date || 0) - (a.date || 0));
+  });
+
   // Sitemap 日期格式 YYYY-MM-DD
   eleventyConfig.addFilter("sitemapDate", (date) => {
     if (!date) return "2026-01-01";
@@ -25,6 +35,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add("Gemfile");
   eleventyConfig.ignores.add("Gemfile.lock");
   eleventyConfig.ignores.add("*.sh");
+  eleventyConfig.ignores.add("scripts");
   eleventyConfig.ignores.add("backups");
   eleventyConfig.ignores.add(".claude");
   eleventyConfig.ignores.add(".vscode");

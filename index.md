@@ -122,6 +122,17 @@ openclaw gateway restart
 
 ---
 
+## 📝 最新文章
+
+更多内容见 [文章列表](docs/articles/)：
+
+| 文章 | 简介 |
+|------|------|
+| [OpenClaw 企业微信：自动销售接待解决方案](docs/articles/OpenClaw企业微信：自动销售接待解决方案/) | 7×24 智能接待、线索入 CRM、预约与人工转接 |
+| [OpenClaw 在微信平台的应用场景与接入方案](docs/articles/OpenClaw在微信平台的应用场景与接入方案/) | 微信生态应用场景与合规接入方案对比 |
+
+---
+
 ## 📖 关于本教程
 
 > ⚠️ **版本说明**：本教程基于 **OpenClaw 2026.3.8** 版本编写（已验证）。
@@ -205,18 +216,6 @@ openclaw gateway restart
 | 附录 | 内容 |
 |------|------|
 | [安全指南](docs/03-advanced/99-security-guide.md) | 安全模型、已知安全事件、Skills安全与最佳实践 |
-
-#### 来自 PDF 的扩展阅读
-| 文章 | 内容 |
-|------|------|
-| [扩展阅读首页](docs/from-pdf/README) | 由 PDF 整理发布的补充文章，与主教程风格统一 |
-| [OpenClaw 橙皮书：从入门到精通](docs/from-pdf/OpenClaw橙皮书-从入门到精通) | 架构、部署、渠道、Skills、模型与安全一站式手册 |
-| [OpenClaw 新手入门宝典](docs/from-pdf/OpenClaw新手入门宝典) | 从零到上手：简介、安装、飞书/微信接入、Skill 实战 |
-| [OpenClaw 完整能力详解与部署手册](docs/from-pdf/OpenClaw完整能力详解与部署手册) | 能力详解、macOS 部署与测试 Demo |
-| [2026 OpenClaw 完全指南](docs/from-pdf/2026OpenClaw完全指南307页) | 从原理到实战的完整指南（307 页） |
-| [我的 AI 龙虾三万养成日记（傅盛）](docs/from-pdf/我的-AI龙虾三万养成日记傅盛) | 傅盛 EasyClaw 龙虾局分享与避坑心得 |
-| [《智干》AI 快闪：长周期 Agent 架构与创业](docs/from-pdf/02-07_智干AI快闪Open_Claw与长周期Agent架构应用创业-总结) | 基础设施、A2A、商业化与落地讨论总结 |
-| [智谱龙虾派对：虾聊 AI 社交平台](docs/from-pdf/智谱龙虾派对_为Agent重构互联网-虾聊-全网首个AI社交平台_Weilian) | 虾聊、ClawdChat、MCP 市场与生态分享 |
 
 ---
 

@@ -9,6 +9,7 @@
   "locale": "zh_CN",
   "navigation": [
     { "title": "首页", "url": "/" },
+    { "title": "文章", "url": "/docs/articles/" },
     { "title": "快速开始", "url": "/docs/01-basics/03-quick-start/" },
     { "title": "核心功能", "url": "/docs/02-core-features/04-file-management/" },
     { "title": "进阶应用", "url": "/docs/03-advanced/08-skills-extension/" },
