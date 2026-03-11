@@ -1,7 +1,7 @@
 {
   "title": "Awesome OpenClaw Tutorial",
   "description": "龙虾 OpenClaw 中文教程：大龙虾 Claw 从零到上手，含安装配置、飞书/企微接入、Skills 扩展、文件与知识库管理、自动化工作流与 70+ 实战案例，最全 OpenClaw 指南。",
-  "url": "",
+  "url": "https://claw.oucloud.top",
   "baseurl": "",
   "repository": "fds2003/awesome-openclaw",
   "keywords": "龙虾, 大龙虾, claw, openclaw, OpenClaw, OpenClaw教程, 龙虾教程, AI助手, 飞书机器人, 飞书Bot, Skills, Gateway, ClawHub, 安装配置, 快速上手, 文件管理, 知识库, 日程管理, 自动化工作流, 多平台集成, 企微, 钉钉, API集成, 命令速查, 实战案例, 超级个体, 中文教程",
