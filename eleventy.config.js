@@ -3,6 +3,13 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
 
+  // Sitemap 日期格式 YYYY-MM-DD
+  eleventyConfig.addFilter("sitemapDate", (date) => {
+    if (!date) return "2026-01-01";
+    const d = date instanceof Date ? date : new Date(date);
+    return isNaN(d.getTime()) ? "2026-01-01" : d.toISOString().slice(0, 10);
+  });
+
   // 直接复制到输出目录
   eleventyConfig.addPassthroughCopy("search-index.json");
   eleventyConfig.addPassthroughCopy("search-index-expanded.json");
@@ -22,6 +29,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add(".vscode");
   eleventyConfig.ignores.add(".git");
   eleventyConfig.ignores.add("node_modules");
+  eleventyConfig.ignores.add("vendor");
   eleventyConfig.ignores.add("_layouts");
   eleventyConfig.ignores.add("preview.html");
   eleventyConfig.ignores.add("_config.yml");

@@ -8,12 +8,10 @@
 
 ### 1. 填写站点地址（必做）
 
-在 **`_config.yml`** 中把 `url` 改成你的真实访问地址，否则 canonical、sitemap、OG 链接都会错：
+- **Eleventy**：在 **`_data/site.json`** 中把 `url` 改成你的真实访问地址（如 Vercel 域名）。
+- **Jekyll**：在 **`_config.yml`** 中填写 `url`。
 
-```yaml
-url: "https://你的域名或 GitHub Pages 地址"
-# 例如：url: "https://yourname.github.io/awesome-openclaw-tutorial"
-```
+否则 canonical、sitemap、OG 链接都会错。
 
 ### 2. 修改 robots.txt 里的 Sitemap 地址
 
@@ -39,6 +37,7 @@ Sitemap: https://你的域名/sitemap.xml
 | **robots.txt** | 已添加，允许全站抓取；部署后记得改 Sitemap 那一行 |
 | **Schema.org** | 全站输出 WebSite（含站内搜索），文档页输出 TechArticle |
 | **语言与主题色** | `lang="zh-CN"`、`locale: zh_CN`、`theme-color` 已设，利于移动端与地域识别 |
+| **sitemap.xml** | Eleventy 构建时由 `sitemap.xml.njk` 自动生成，包含全站页面；`_data/site.json` 的 `url` 为空时使用 `https://example.com` 作为 base |
 
 ---
 
@@ -54,13 +53,32 @@ Sitemap: https://你的域名/sitemap.xml
 
 ---
 
-## 四、已配置的热门关键词
+## 四、已配置关键词（基于站内内容提取）
 
-站点已在 `_config.yml` 中配置与热门词相关的 SEO：
+站点在 **`_data/site.json`**（Eleventy）或 **`_config.yml`**（Jekyll）中配置了以下关键词，来源于全站标题与核心章节：
 
-- **关键词**：龙虾、大龙虾、claw、openclaw、OpenClaw、OpenClaw教程、龙虾教程、AI助手、飞书机器人、Skills
-- **描述**：首页与全站默认 description 已自然融入「龙虾 / 大龙虾 / OpenClaw / Claw」，便于搜索「龙虾」「大龙虾」「claw」「openclaw」时命中。
+| 类型 | 关键词 |
+|------|--------|
+| **品牌/热门** | 龙虾, 大龙虾, claw, openclaw, OpenClaw, OpenClaw教程, 龙虾教程 |
+| **产品与能力** | AI助手, 飞书机器人, 飞书Bot, Skills, Gateway, ClawHub |
+| **教程主题** | 安装配置, 快速上手, 文件管理, 知识库, 日程管理, 自动化工作流 |
+| **进阶** | 多平台集成, 企微, 钉钉, API集成, 命令速查, 实战案例, 超级个体, 中文教程 |
+
+- **全站 description** 已融入「龙虾 / 大龙虾 / 飞书 / 企微 / 知识库 / 自动化」等词，便于长尾搜索。
 - 单页可在 front matter 中设置 `keywords:` 覆盖或补充。
+
+**按内容可补充的页级关键词（可选）**：
+
+| 页面/章节 | 建议补充关键词 |
+|-----------|----------------|
+| 第2章 环境搭建 | 安装教程, Mac 部署, 云端部署, Docker |
+| 第4章 文件管理 | 本地文件, 读写文件, 搜索文件 |
+| 第5章 知识库 | 知识管理, 网页存档, 笔记整理 |
+| 第8章 Skills | ClawHub, 技能市场, 自定义 Skills |
+| 第9章 多平台 | 飞书 Bot, 企业微信, 钉钉, QQ |
+| 第10章 API | 绘图 API, Notion, 视频生成, 语音合成 |
+| 附录A 命令速查 | openclaw 命令, 命令行 |
+| 安全指南 | 安全配置, Gateway 认证 |
 
 ## 五、可选：每页独立描述与图片
 

@@ -7,6 +7,6 @@ Disallow: /search.json
 Disallow: /search-index.json
 Disallow: /search-index-expanded.json
 
-# Sitemap：部署后请将下方改为你的站点根地址，例如 https://你的域名.com/sitemap.xml
-# 若已在 _config.yml 中填写 url，可手动改为：Sitemap: https://你的域名/sitemap.xml
+# Sitemap：部署后请将下方改为你的站点根地址（与 _data/site.json 的 url 一致）
+# 例如：Sitemap: https://你的域名.vercel.app/sitemap.xml
 Sitemap: https://example.com/sitemap.xml
