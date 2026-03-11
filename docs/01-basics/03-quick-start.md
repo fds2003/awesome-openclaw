@@ -596,7 +596,7 @@ AI 的名称、身份、主题设定。
 
 ## 3.4 模型选择指南
 
-> 💡 **快速选择**：新手推荐 Claude Haiku 4.5 或 DeepSeek，性价比高且完全够用。详细的模型对比和切换策略请参考 [第11章：高级配置](../03-advanced/11-advanced-configuration.md)。
+> 💡 **快速选择**：新手推荐 Claude Haiku 4.5 或 DeepSeek，性价比高且完全够用。详细的模型对比和切换策略请参考 [第11章：高级配置](../03-advanced/11-advanced-configuration/)。
 
 ---
 
@@ -855,7 +855,7 @@ openclaw config set agents.defaults.model.primary "maynor/claude-haiku-4-5-20251
 openclaw gateway restart
 ```
 > 📚 **想了解更多？**  
-> 详细的模型对比、多模型切换策略、成本优化方案，请参考 [第10章：高级配置](../03-advanced/10-advanced-configuration.md)。
+> 详细的模型对比、多模型切换策略、成本优化方案，请参考 [第11章：高级配置](../03-advanced/11-advanced-configuration/)。
 
 ## 3.5 Gateway 网关配置（进阶）
 
@@ -1089,6 +1089,6 @@ openclaw gateway restart
 
 ---
 
-**下一章**：[第4章：本地文件管理](../02-core-features/04-file-management.md) - 让OpenClaw成为你的文件管理神器
+**下一章**：[第4章：本地文件管理](../02-core-features/04-file-management/) - 让OpenClaw成为你的文件管理神器
 
-**返回目录**：[README](../../README.md)
+**返回目录**：[首页](/)

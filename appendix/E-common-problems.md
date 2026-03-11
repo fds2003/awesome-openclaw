@@ -975,7 +975,7 @@ openclaw info
 ### 3. 社区求助
 - 📖 在仓库的 Discussions 中提问
 - 🐛 在仓库的 Issues 中提交问题
-- 💬 [加入交流群](../README.md#交流群)
+- 💬 [加入交流群](/)
 
 ### 4. 提供信息
 提问时请提供：
@@ -989,9 +989,9 @@ openclaw info
 
 ## 📚 相关资源
 
-- [第17章：避坑指南](17-best-practices.md)
-- [附录A：命令速查表](../../appendix/A-command-reference.md)
-- [附录D：社区资源导航](../../appendix/D-community-resources.md)
+- [附录F：避坑指南与最佳实践](/appendix/F-best-practices/)
+- [附录A：命令速查表](/appendix/A-command-reference/)
+- [附录D：社区资源导航](/appendix/D-community-resources/)
 
 ---
 

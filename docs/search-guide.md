@@ -207,9 +207,8 @@ https://your-site.com/search?q=飞书
 
 ## 📚 相关资源
 
-- [教程目录](../README.md#教程目录)
-- [学习路径](../LEARNING-PATH.md)
-- [常见问题](../appendix/E-common-problems.md)
+- [教程目录](/)
+- [常见问题](/appendix/E-common-problems/)
 
 ---
 

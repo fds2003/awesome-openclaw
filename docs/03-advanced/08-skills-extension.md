@@ -4,7 +4,7 @@
 
 > ⚠️ **重要提示**：没有Skills的OpenClaw只是1个聊天机器人，有了Skills才能真正成为你的AI助手！
 
-> 📊 **Skills 生态概览**：OpenClaw 拥有庞大的 Skills 生态系统，包括内置49个、官方93个、社区1715+个，总计1800+个可用 Skills。详细分类和说明请参考 [Skills 生态说明](../skills-ecosystem.md)。
+> 📊 **Skills 生态概览**：OpenClaw 拥有庞大的 Skills 生态系统，包括内置49个、官方93个、社区1715+个，总计1800+个可用 Skills。详细分类和说明请参考 [Skills 生态说明](../skills-ecosystem/)。
 
 ---
 
@@ -3515,4 +3515,4 @@ camsnap --url rtsp://192.168.1.100:554/stream --verbose
 
 **下一章预告**：第9章将学习多平台集成，包括飞书、企业微信、钉钉、QQ等平台的Bot配置，实现随时随地使用 OpenClaw。飞书作为最现代化的平台将优先介绍。
 
-**返回目录**：[README](../../README.md)
+**返回目录**：[首页](/)

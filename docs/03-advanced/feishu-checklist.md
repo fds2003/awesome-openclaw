@@ -212,8 +212,8 @@ openclaw logs --tail 100
 
 ## 📚 相关文档
 
-- [第9章：多平台集成](09-multi-platform-integration.md)
-- [附录E：常见问题速查](../../appendix/E-common-problems.md#问题14飞书bot不回复)
+- [第9章：多平台集成](09-multi-platform-integration/)
+- [附录E：常见问题速查](/appendix/E-common-problems/#问题14飞书bot不回复)
 - [飞书开放平台文档](https://open.feishu.cn/document/)
 
 ---

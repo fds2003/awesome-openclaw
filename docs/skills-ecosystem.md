@@ -91,7 +91,7 @@ clawhub install community/skill-name
 
 ### Top 20 必装 Skills
 
-详见 [第8章：Skills扩展](03-advanced/08-skills-extension.md)
+详见 [第8章：Skills扩展](/docs/03-advanced/08-skills-extension/)
 
 ### 新手推荐
 
@@ -121,7 +121,7 @@ clawhub install community/skill-name
 
 ## 🔗 相关链接
 
-- [第8章：Skills扩展](03-advanced/08-skills-extension.md) - 详细的 Skills 使用指南
+- [第8章：Skills扩展](/docs/03-advanced/08-skills-extension/) - 详细的 Skills 使用指南
 - [ClawHub 市场](https://clawhub.ai) - 官方 Skills 市场
 - [Skills 开发文档](https://docs.openclaw.ai/skills) - 开发自己的 Skills
 

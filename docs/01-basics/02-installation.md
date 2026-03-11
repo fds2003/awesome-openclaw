@@ -55,8 +55,8 @@ OpenClaw在Mac上体验最好，因为：
 ## 快速导航
 
 **推荐路径**：
-- 🍎 **有Mac** → [Mac本地部署](#mac本地部署推荐) + [飞书配置](../03-advanced/09-multi-platform-integration.md#91-飞书bot配置)
-- ☁️ **无Mac/想24小时运行** → [云端一键部署](#云端一键部署) + [飞书配置](../03-advanced/09-multi-platform-integration.md#91-飞书bot配置)
+- 🍎 **有Mac** → [Mac本地部署](#mac本地部署推荐) + [飞书配置](../03-advanced/09-multi-platform-integration/#91-飞书bot配置)
+- ☁️ **无Mac/想24小时运行** → [云端一键部署](#云端一键部署) + [飞书配置](../03-advanced/09-multi-platform-integration/#91-飞书bot配置)
 
 **所有部署方式**：
 - � [Mac本地部署（推荐）](#mac本地部署推荐)
@@ -251,7 +251,7 @@ openclaw gateway stop
 
 Mac本地部署后，强烈推荐接入飞书，获得最佳体验：
 
-1. 参考 [第9章：飞书Bot配置](../03-advanced/09-multi-platform-integration.md#91-飞书bot配置)
+1. 参考 [第9章：飞书Bot配置](../03-advanced/09-multi-platform-integration/#91-飞书bot配置)
 2. 配置完成后，可以在飞书中随时与OpenClaw对话
 3. 支持文本、图片、文件等多种消息类型
 
@@ -498,7 +498,7 @@ OpenClaw需要对接AI模型才能工作。
 
 **以配置Anthropic Claude（推荐）为例：**
 
-> 📖 **详细说明**: 完整的 API Key 配置方式和优先级说明请参考 [API Key 配置完整指南](../api-key-config-guide.md)
+> 📖 **详细说明**: 完整的 API Key 配置方式和优先级说明请参考 [API Key 配置完整指南](../api-key-config-guide/)
 
 ```bash
 # WSL2或PowerShell
@@ -948,7 +948,7 @@ openclaw onboard
 
 **Q3: 手机怎么访问？**
 - 通过QQ、企微、飞书等平台
-- 详见[第9章：多平台集成](../03-advanced/09-multi-platform-integration.md)
+- 详见[第9章：多平台集成](../03-advanced/09-multi-platform-integration/)
 
 ## 国内一键安装（推荐）
 
@@ -1206,7 +1206,7 @@ openclaw-cn message send --target +15555550123 --message "Hello from OpenClaw"
 
 ### 配置文件位置
 
-> 📖 **详细说明**: 完整的配置文件结构和使用指南请参考 [配置文件结构完整指南](../config-file-structure.md)
+> 📖 **详细说明**: 完整的配置文件结构和使用指南请参考 [配置文件结构完整指南](../config-file-structure/)
 
 ```bash
 # 主配置文件
@@ -1317,9 +1317,9 @@ openclaw-cn configure --section auth
 安装完成后，可以：
 
 1. 配置 AI 模型（见下文"API配置指南"）
-2. 连接聊天平台（见[第9章：多平台集成](../03-advanced/09-multi-platform-integration.md)）
-3. 安装 Skills（见[第8章：Skills扩展](../03-advanced/08-skills-extension.md)）
-4. 开始使用（见[第3章：快速上手](03-quick-start.md))
+2. 连接聊天平台（见[第9章：多平台集成](../03-advanced/09-multi-platform-integration/)）
+3. 安装 Skills（见[第8章：Skills扩展](../03-advanced/08-skills-extension/)）
+4. 开始使用（见[第3章：快速上手](03-quick-start/)）
 
 ---
 
@@ -1579,8 +1579,8 @@ Cloudflare Workers + OpenClaw 是一个低成本的尝鲜方案，适合：
 
 **下一步**：
 - 配置 AI 模型（见下文"API配置指南"）
-- 配置通讯渠道（见[第9章：多平台集成](../03-advanced/09-multi-platform-integration.md)）
-- 安装 Skills（见[第8章：Skills扩展](../03-advanced/08-skills-extension.md)）
+- 配置通讯渠道（见[第9章：多平台集成](../03-advanced/09-multi-platform-integration/)）
+- 安装 Skills（见[第8章：Skills扩展](../03-advanced/08-skills-extension/)）
 
 ---
 
@@ -2122,8 +2122,8 @@ docker compose up -d openclaw-cn-gateway
 
 **下一步**：
 - 配置 API 模型（见下文"API配置指南"）
-- 配置通讯渠道（见[第9章：多平台集成](../03-advanced/09-multi-platform-integration.md)）
-- 安装 Skills（见[第8章：Skills扩展](../03-advanced/08-skills-extension.md)）
+- 配置通讯渠道（见[第9章：多平台集成](../03-advanced/09-multi-platform-integration/)）
+- 安装 Skills（见[第8章：Skills扩展](../03-advanced/08-skills-extension/)）
 
 ---
 
@@ -2436,7 +2436,7 @@ OpenClaw内置支持非常多的API模型，包括但不限于：
 
 #### 配置文件位置
 
-> 📖 **详细说明**: 完整的配置文件结构和使用指南请参考 [配置文件结构完整指南](../config-file-structure.md)
+> 📖 **详细说明**: 完整的配置文件结构和使用指南请参考 [配置文件结构完整指南](../config-file-structure/)
 
 ```bash
 # 配置文件路径
@@ -3733,6 +3733,6 @@ curl -s https://api.github.com/repos/openclaw/openclaw/releases/latest
 
 ---
 
-**下一章**：[第3章：快速上手](03-quick-start.md) - 开始使用 OpenClaw
+**下一章**：[第3章：快速上手](03-quick-start/) - 开始使用 OpenClaw
 
-**返回目录**：[README](../../README.md)
+**返回目录**：[首页](/)
