@@ -1,6 +1,6 @@
 // 站点配置（对应原 _config.yml 的 site 部分）
 module.exports = {
-  title: "Awesome OpenClaw Tutorial",
+  title: "OpenClaw 中文教程",
   description: "龙虾 OpenClaw 教程，从零开始玩转大龙虾 Claw：安装配置、飞书接入、Skills 扩展与实战案例，最全面的中文 OpenClaw 指南。",
   baseurl: "",
   url: "",
