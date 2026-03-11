@@ -1,0 +1,13 @@
+# 兼容 Ruby 2.6 的本地运行用 Gemfile（无需 github-pages 全家桶）
+source "https://rubygems.org"
+
+gem "ffi", "~> 1.15.5"  # 1.17+ 需 Ruby 3.0，固定旧版以兼容 2.6
+gem "jekyll", "~> 3.9"
+gem "jekyll-remote-theme"
+gem "jekyll-relative-links"
+gem "jekyll-optional-front-matter"
+gem "jekyll-readme-index"
+gem "jekyll-titles-from-headings"
+gem "jekyll-seo-tag"
+gem "kramdown-parser-gfm"
+gem "webrick"

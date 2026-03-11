@@ -173,5 +173,5 @@ python scripts/generate_image.py -p "画只猫" -k "your-api-key"
 
 ## 📞 需要帮助？
 
-- GitHub Issues: [提交问题](https://github.com/xianyu110/awesome-openclaw-tutorial/issues)
-- 完整教程：[OpenClaw 超级个体实战指南](https://github.com/xianyu110/awesome-openclaw-tutorial)
+- 在仓库的 Issues 中提交问题
+- 参考本仓库中的 OpenClaw 教程

@@ -1,16 +1,14 @@
 ---
 layout: default
 title: 首页
+description: 龙虾 OpenClaw 教程，大龙虾 Claw 从零上手：安装配置、飞书接入、Skills 扩展与 70+ 实战案例，最全中文 OpenClaw 指南。
 ---
 
 # 🦞 一本书玩转 OpenClaw：超级个体实战指南
 
-> 从零开始打造你的 AI 工作助手——最全面的中文教程，涵盖安装、配置、实战案例和避坑指南
+> 龙虾 / 大龙虾 Claw 从零到上手：OpenClaw 中文教程，安装配置、飞书接入、Skills 扩展与实战案例，打造你的 AI 助手。
 
-[![GitHub stars](https://img.shields.io/github/stars/xianyu110/awesome-openclaw-tutorial?style=social)](https://github.com/xianyu110/awesome-openclaw-tutorial)
-[![GitHub forks](https://img.shields.io/github/forks/xianyu110/awesome-openclaw-tutorial?style=social)](https://github.com/xianyu110/awesome-openclaw-tutorial)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-v2026.3.8-green.svg)](https://github.com/xianyu110/awesome-openclaw-tutorial)
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-2026.3.8-orange.svg)](https://openclaw.ai)
 
 ---
@@ -69,7 +67,7 @@ openclaw gateway restart
 
 ---
 
-### 🔧 2026.3.2 版��：AI变"哑巴"了？
+### 🔧 2026.3.2 版本：AI变"哑巴"了？
 
 **问题现象**：升级到 2026.3.2 后，OpenClaw只能聊天不能干活（文件管理、命令执行等工具功能全部失效）
 
@@ -126,41 +124,7 @@ openclaw gateway restart
 
 ## 📖 关于本教程
 
-**OpenClaw 2026.3.7 Breaking Change**：Gateway认证现在要求显式设置 `gateway.auth.mode`。你必须明确选择 `token` 或 `password` 认证方式，不再有「无认证」的默认选项。
-
-**配置方法**：
-
-在 `~/.openclaw/openclaw.json` 中添加以下配置：
-
-```json
-{
-  "gateway": {
-    "auth": {
-      "mode": "token",  // 或 "password"
-      "token": "your-secret-token"
-    }
-  }
-}
-```
-
-**⚠️ 重要提示**：如果你从旧版本升级到 v2026.3.7 且没有配置认证，Gateway将拒绝启动。这是一个有意为之的设计，强制所有用户设置认证。
-
-**快速修复（命令行��**：
-
-```bash
-# 设置token认证
-openclaw config set gateway.auth.mode token
-openclaw config set gateway.auth.token "your-secret-token"
-
-# 重启Gateway
-openclaw gateway restart
-```
-
----
-
-## 📖 关于本教程
-
-> ⚠️ **版本说明**：本教程基于 **OpenClaw2026.3.8**版本编写（已验证）。
+> ⚠️ **版本说明**：本教程基于 **OpenClaw 2026.3.8** 版本编写（已验证）。
 
 > 💡 **重要前提**：OpenClaw 预装了 **49 个内置技能（Skills）**，开箱即用，无需额外安装即可完成本教程大部分演示。
 
@@ -216,7 +180,7 @@ openclaw gateway restart
 ### 附录：速查手册
 
 #### 基础附录（A-F）
-| ��录 | 内容 |
+| 附录 | 内容 |
 |------|------|
 | [附录A：命令速查表](appendix/A-command-reference.md) | 100+ 常用命令，5 大类快速查找 |
 | [附录B：必装 Skills 清单](appendix/B-skills-catalog.md) | Top10 必装技能，附安装教程 |
@@ -234,13 +198,25 @@ openclaw gateway restart
 | [附录J：飞书配置检查清单](appendix/J-feishu-checklist.md) | 确保飞书Bot配置完整，避免常见问题 |
 | [附录K：API Key 配置完整指南](appendix/K-api-key-config-guide.md) | 多种API Key配置方式详解 |
 | [附录L：配置文件结构完整指南](appendix/L-config-file-structure.md) | 全局配置、Agent配置、认证配置详解 |
-| [附录M：搜索功能使用指南](appendix/M-search-guide.md) | 搜索���能使用技巧和常见问题 |
+| [附录M：搜索功能使用指南](appendix/M-search-guide.md) | 搜索功能使用技巧和常见问题 |
 | [附录N：Skills 生态说明](appendix/N-skills-ecosystem.md) | 内置49个、官方93个、社区1715+个Skills介绍 |
 
 #### 安全指南
 | 附录 | 内容 |
 |------|------|
 | [安全指南](docs/03-advanced/99-security-guide.md) | 安全模型、已知安全事件、Skills安全与最佳实践 |
+
+#### 来自 PDF 的扩展阅读
+| 文章 | 内容 |
+|------|------|
+| [扩展阅读首页](docs/from-pdf/README) | 由 PDF 整理发布的补充文章，与主教程风格统一 |
+| [OpenClaw 橙皮书：从入门到精通](docs/from-pdf/OpenClaw橙皮书-从入门到精通) | 架构、部署、渠道、Skills、模型与安全一站式手册 |
+| [OpenClaw 新手入门宝典](docs/from-pdf/OpenClaw新手入门宝典) | 从零到上手：简介、安装、飞书/微信接入、Skill 实战 |
+| [OpenClaw 完整能力详解与部署手册](docs/from-pdf/OpenClaw完整能力详解与部署手册) | 能力详解、macOS 部署与测试 Demo |
+| [2026 OpenClaw 完全指南](docs/from-pdf/2026OpenClaw完全指南307页) | 从原理到实战的完整指南（307 页） |
+| [我的 AI 龙虾三万养成日记（傅盛）](docs/from-pdf/我的-AI龙虾三万养成日记傅盛) | 傅盛 EasyClaw 龙虾局分享与避坑心得 |
+| [《智干》AI 快闪：长周期 Agent 架构与创业](docs/from-pdf/02-07_智干AI快闪Open_Claw与长周期Agent架构应用创业-总结) | 基础设施、A2A、商业化与落地讨论总结 |
+| [智谱龙虾派对：虾聊 AI 社交平台](docs/from-pdf/智谱龙虾派对_为Agent重构互联网-虾聊-全网首个AI社交平台_Weilian) | 虾聊、ClawdChat、MCP 市场与生态分享 |
 
 ---
 
@@ -263,7 +239,6 @@ openclaw gateway restart
 - [OpenClaw 官网](https://openclaw.ai)
 - [OpenClaw 官方文档](https://docs.openclaw.ai)
 - [ClawHub 技能市场](https://clawhub.ai)
-- [GitHub 仓库](https://github.com/xianyu110/awesome-openclaw-tutorial)
 
 ---
 

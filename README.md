@@ -3,11 +3,10 @@
 
 > 从零开始打造你的AI工作助手：最全面的中文教程，涵盖安装、配置、实战案例和避坑指南
 
-[![GitHub stars](https://img.shields.io/github/stars/xianyu110/awesome-openclaw-tutorial?style=social)](https://github.com/xianyu110/awesome-openclaw-tutorial)
-[![GitHub forks](https://img.shields.io/github/forks/xianyu110/awesome-openclaw-tutorial?style=social)](https://github.com/xianyu110/awesome-openclaw-tutorial)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-v2026.3.8-green.svg)](https://github.com/xianyu110/awesome-openclaw-tutorial)
 [![Status](https://img.shields.io/badge/status-完成-success.svg)](PROJECT-SUMMARY.md)
+
+**本地运行**：可用 Node.js 构建（无需 Ruby）：`npm install && npm start`，详见 [NODE-MIGRATION.md](NODE-MIGRATION.md)。
 
 ## 🎉 项目状态
 
@@ -161,8 +160,8 @@ openclaw gateway restart
 
 **找不到答案？**
 - 📖 [查看完整FAQ](appendix/E-common-problems.md)
-- 💬 [GitHub Discussions](https://github.com/xianyu110/awesome-openclaw-tutorial/discussions)
-- 🐛 [报告Bug](https://github.com/xianyu110/awesome-openclaw-tutorial/issues)
+- 💬 在仓库的 Discussions 中提问
+- 🐛 在仓库的 Issues 中报告问题
 
 ---
 
@@ -716,23 +715,6 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
 5. 提交Pull Request
 
-## 📮 联系方式
-
-- **GitHub**: [@xianyu110](https://github.com/xianyu110)
-- **Clawbot项目**: [700+ Stars](https://github.com/xianyu110/clawbot)
-- **CSDN专栏**: [OpenClaw从入门到精通](https://blog.csdn.net/xianyu120/category_13126767.html)
-- **B站**: [@MaynorAI](https://space.bilibili.com/399102586)
-- **两万人AI社区主理人**
-
-## 👥 交流群
-
-欢迎加入OpenClaw交流群，与更多开发者一起交流学习！备注：小龙虾
-
-<div align="center">
-  <img src="https://upload.maynor1024.live/file/1772695436136_20260305152343578.jpg" alt="OpenClaw交流群二维码" width="300">
-  <p>扫码加入OpenClaw交流群</p>
-</div>
-
 ## 💖 支持项目
 
 如果这个教程对你有帮助，请：
@@ -780,7 +762,6 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 - **OpenClaw官方**：https://github.com/openclaw/openclaw
 - **OpenClaw文档**：https://docs.openclaw.ai
 - **Awesome Skills**：https://github.com/VoltAgent/awesome-openclaw-skills
-- **Clawbot项目**：https://github.com/xianyu110/clawbot（700+ Stars，历史参考）
 
 ## 📄 许可证
 
@@ -796,9 +777,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 - ✅ **允许分享**：欢迎分享给更多需要的人
 - ✅ **允许修改**：可以修改并分享，但必须保持开源
 
-如果你发现有人倒卖本教程，请通过以下方式举报：
-- 提交 [GitHub Issue](https://github.com/xianyu110/awesome-openclaw-tutorial/issues)
-- 联系作者：[@xianyu110](https://github.com/xianyu110)
+如果你发现有人倒卖本教程，请在仓库中提交 Issue 举报。
 
 **GPL-3.0 核心要求**：
 - 任何使用本项目代码的衍生作品必须开源

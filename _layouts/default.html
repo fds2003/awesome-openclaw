@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="{{ site.lang | default: 'zh-CN' }}">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} - {{ site.title }}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+  <meta name="theme-color" content="#0f3460">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦞</text></svg>">
 
-  <!-- SEO -->
+  <!-- SEO：title、description、canonical、Open Graph、Twitter Card 由 jekyll-seo-tag 生成（需在 _config 中填写 url） -->
   {% seo %}
+  {% assign kw = page.keywords | default: site.keywords %}{% if kw %}
+  <meta name="keywords" content="{{ kw }}">
+  {% endif %}
+
+  <!-- Schema.org JSON-LD：站点 + 站内搜索（有利于搜索引擎理解与富结果） -->
+  {% if site.url != "" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.title | escape }}",
+    "description": "{{ site.description | escape }}",
+    "url": "{{ site.url }}{{ site.baseurl }}/",
+    "inLanguage": "{{ site.lang | default: 'zh-CN' }}",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "{{ site.url }}{{ site.baseurl }}/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  {% endif %}
+  {% if page.layout == 'default' and page.url != '/' and page.title %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "{{ page.title | escape }}",
+    "description": "{{ page.description | default: site.description | escape }}",
+    "url": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
+    "inLanguage": "{{ site.lang | default: 'zh-CN' }}",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "{{ site.title | escape }}",
+      "url": "{{ site.url }}{{ site.baseurl }}/"
+    }
+  }
+  </script>
+  {% endif %}
 
   <!-- Cayman base styles -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
@@ -286,7 +327,7 @@
       </form>
     </div>
 
-    <a href="{{ site.github.repository_url }}" class="btn">⭐ GitHub</a>
+    {% if site.repository != "" %}<a href="https://github.com/{{ site.repository }}" class="btn">⭐ GitHub</a>{% endif %}
     <a href="{{ '/' | relative_url }}" class="btn">🏠 首页</a>
     <a href="{{ '/docs/01-basics/02-installation' | relative_url }}" class="btn">🚀 安装</a>
     <a href="{{ '/docs/01-basics/03-quick-start' | relative_url }}" class="btn">⚡ 快速开始</a>
@@ -298,15 +339,14 @@
 
     <footer class="site-footer">
       <p>
-        由 <a href="https://github.com/xianyu110">@xianyu110</a> 维护 ·
-        基于 <a href="https://openclaw.ai">OpenClaw 2026.3.2</a> ·
+        基于 <a href="https://openclaw.ai">OpenClaw</a> ·
         采用 <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0 License</a>
       </p>
       <p>
         <a href="https://openclaw.ai">官网</a> ·
         <a href="https://docs.openclaw.ai">文档</a> ·
-        <a href="https://clawhub.ai">ClawHub</a> ·
-        <a href="https://github.com/xianyu110/awesome-openclaw-tutorial/issues">反馈问题</a>
+        <a href="https://clawhub.ai">ClawHub</a>
+        {% if site.repository != "" %} · <a href="https://github.com/{{ site.repository }}/issues">反馈问题</a>{% endif %}
       </p>
     </footer>
   </main>

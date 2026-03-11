@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang or 'zh-CN' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+  <meta name="theme-color" content="#0f3460">
+  <title>{{ title or '首页' }} - {{ site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  {% set kw = keywords or site.keywords %}
+  {% if kw %}
+  <meta name="keywords" content="{{ kw }}">
+  {% endif %}
+  {% if site.url %}
+  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace('/index.html','/') }}">
+  {% endif %}
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦞</text></svg>">
+
+  {% if site.url %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.title | e }}",
+    "description": "{{ site.description | e }}",
+    "url": "{{ site.url }}{{ site.baseurl }}/",
+    "inLanguage": "{{ site.lang or 'zh-CN' }}",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": { "@type": "EntryPoint", "urlTemplate": "{{ site.url }}{{ site.baseurl }}/search/?q={search_term_string}" },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  {% endif %}
+  {% if page.url != '/' and page.url != '/index.html' and title %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "{{ title | e }}",
+    "description": "{{ (description or site.description) | e }}",
+    "url": "{{ site.url or '' }}{{ site.baseurl or '' }}{{ page.url | replace('/index.html','/') }}",
+    "inLanguage": "{{ site.lang or 'zh-CN' }}",
+    "isPartOf": { "@type": "WebSite", "name": "{{ site.title | e }}", "url": "{{ site.url or '' }}{{ site.baseurl or '' }}/" }
+  }
+  </script>
+  {% endif %}
+
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", Helvetica, Arial, sans-serif, "Apple Color Emoji"; color: #333; }
+    .page-header { background: linear-gradient(135deg, #0f3460 0%, #16213e 50%, #0d7377 100%); padding: 3rem 2rem 2rem; text-align: center; }
+    .page-header .project-name { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.5px; }
+    .page-header .project-tagline { font-size: 1.1rem; opacity: 0.85; margin-top: 0.5rem; font-weight: 400; }
+    .page-header .btn { display: inline-block; margin: 0.4rem 0.3rem 0; padding: 0.55rem 1.1rem; font-size: 0.9rem; font-weight: 600; color: rgba(255,255,255,0.85); background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.3); border-radius: 6px; text-decoration: none; transition: background 0.2s, border-color 0.2s, color 0.2s; }
+    .page-header .btn:hover { background: rgba(255,255,255,0.22); border-color: rgba(255,255,255,0.6); color: #fff; text-decoration: none; }
+    .header-search { margin: 1.5rem auto 0.5rem; max-width: 520px; }
+    .search-form { display: flex; gap: 0.5rem; }
+    .search-input { flex: 1; padding: 0.65rem 1rem; font-size: 0.95rem; border: 1.5px solid rgba(255,255,255,0.35); border-radius: 6px; background: rgba(255,255,255,0.92); outline: none; }
+    .search-submit { padding: 0.65rem 1.3rem; font-size: 0.95rem; font-weight: 600; background: rgba(255,255,255,0.18); color: #fff; border: 1.5px solid rgba(255,255,255,0.45); border-radius: 6px; cursor: pointer; white-space: nowrap; }
+    .main-content { max-width: 62rem; padding: 2.5rem 3.5rem; margin: 0 auto; font-size: 1.05rem; line-height: 1.8; }
+    .main-content h1 { font-size: 2rem; color: #0d7377; margin-top: 0; border-bottom: 2px solid #e8f4f4; padding-bottom: 0.5rem; }
+    .main-content h2 { font-size: 1.5rem; color: #0f3460; margin-top: 2.5rem; border-bottom: 1px solid #eaeaea; padding-bottom: 0.3rem; }
+    .main-content h3 { font-size: 1.2rem; color: #1a5276; margin-top: 2rem; }
+    .main-content h4 { font-size: 1.05rem; color: #1a5276; margin-top: 1.5rem; }
+    .main-content a { color: #0d7377; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s; }
+    .main-content a:hover { border-bottom-color: #0d7377; text-decoration: none; }
+    .main-content table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; margin: 1.2rem 0; font-size: 0.95rem; }
+    .main-content th { background: #0f3460; color: #fff; font-weight: 600; padding: 0.6rem 1rem; text-align: left; white-space: nowrap; }
+    .main-content td { padding: 0.55rem 1rem; border: 1px solid #e0e4e8; vertical-align: top; }
+    .main-content tr:nth-child(even) td { background: #f6f8fa; }
+    .main-content tr:hover td { background: #eef4f4; }
+    .main-content code { padding: 2px 6px; font-family: Consolas, Menlo, monospace; font-size: 0.875em; color: #c7254e; background: #f9f2f4; border-radius: 4px; }
+    .main-content pre { padding: 1rem 1.2rem; margin: 1rem 0 1.4rem; font-family: Consolas, Menlo, monospace; font-size: 0.9rem; line-height: 1.6; color: #d8dee9; background: #2e3440; border-radius: 8px; overflow-x: auto; }
+    .main-content pre > code { padding: 0; color: inherit; background: transparent; font-size: inherit; }
+    .main-content blockquote { margin: 1.2rem 0; padding: 0.8rem 1.2rem; background: #f0f8f8; border-left: 4px solid #0d7377; border-radius: 0 6px 6px 0; color: #444; font-style: normal; }
+    .main-content blockquote p { margin: 0; }
+    .main-content img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin: 0.8rem 0; }
+    .main-content img[src*="shields.io"], .main-content img[src*="img.shields"] { box-shadow: none; margin: 0 2px; }
+    .main-content hr { border: none; border-top: 1px solid #e0e4e8; margin: 2.5rem 0; }
+    .site-footer { padding: 2rem 0 1.5rem; margin-top: 3rem; border-top: 1px solid #e0e4e8; text-align: center; font-size: 0.9rem; color: #777; }
+    .site-footer a { color: #0d7377; text-decoration: none; }
+    .site-footer a:hover { text-decoration: underline; }
+    @media (max-width: 64em) { .main-content { padding: 2rem 1.5rem; } .page-header .project-name { font-size: 1.8rem; } }
+    @media (max-width: 42em) { .main-content { padding: 1.5rem 1rem; font-size: 0.97rem; } .page-header { padding: 2rem 1rem 1.5rem; } .page-header .project-name { font-size: 1.5rem; } .page-header .project-tagline { font-size: 0.95rem; } .header-search { margin: 1rem 0 0; } .search-input, .search-submit { font-size: 0.9rem; padding: 0.55rem 0.8rem; } .main-content table { font-size: 0.88rem; } }
+  </style>
+</head>
+<body>
+  <header class="page-header" role="banner">
+    <h1 class="project-name">🦞 {{ site.title }}</h1>
+    <h2 class="project-tagline">{{ site.description }}</h2>
+    <div class="header-search">
+      <form action="{{ '/search/' | url }}" method="get" class="search-form">
+        <input type="text" name="q" placeholder="🔍 搜索教程内容..." class="search-input" autocomplete="off">
+        <button type="submit" class="search-submit">搜索</button>
+      </form>
+    </div>
+    {% if site.repository %}<a href="https://github.com/{{ site.repository }}" class="btn">⭐ GitHub</a>{% endif %}
+    <a href="{{ '/' | url }}" class="btn">🏠 首页</a>
+    <a href="{{ '/docs/01-basics/02-installation/' | url }}" class="btn">🚀 安装</a>
+    <a href="{{ '/docs/01-basics/03-quick-start/' | url }}" class="btn">⚡ 快速开始</a>
+    <a href="{{ '/appendix/A-command-reference/' | url }}" class="btn">📋 命令速查</a>
+  </header>
+  <main id="content" class="main-content" role="main">
+    {{ content | safe }}
+    <footer class="site-footer">
+      <p>基于 <a href="https://openclaw.ai">OpenClaw</a> · 采用 <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0 License</a></p>
+      <p><a href="https://openclaw.ai">官网</a> · <a href="https://docs.openclaw.ai">文档</a> · <a href="https://clawhub.ai">ClawHub</a>{% if site.repository %} · <a href="https://github.com/{{ site.repository }}/issues">反馈问题</a>{% endif %}</p>
+    </footer>
+  </main>
+</body>
+</html>

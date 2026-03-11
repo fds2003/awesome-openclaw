@@ -2,7 +2,7 @@
 name: "Banana Pro Image Generation"
 description: "使用 Gemini 3 Pro Image 生成图片，支持白板图、Logo设计、社交媒体配图等多种场景"
 version: "1.0.0"
-author: "xianyu110"
+author: ""
 compatibility: ["claude-code", "cursor", "github-copilot", "openclaw"]
 tags: ["image-generation", "ai-art", "gemini", "whiteboard", "creative"]
 ---
@@ -397,7 +397,3 @@ bananapro-image-gen/
 
 MIT License
 
-## 作者
-
-- GitHub: [@xianyu110](https://github.com/xianyu110)
-- 教程: [OpenClaw 超级个体实战指南](https://github.com/xianyu110/awesome-openclaw-tutorial)

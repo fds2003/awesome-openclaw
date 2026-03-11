@@ -973,8 +973,8 @@ openclaw info
 ```
 
 ### 3. 社区求助
-- 📖 [GitHub Discussions](https://github.com/xianyu110/awesome-openclaw-tutorial/discussions)
-- 🐛 [提交Issue](https://github.com/xianyu110/awesome-openclaw-tutorial/issues)
+- 📖 在仓库的 Discussions 中提问
+- 🐛 在仓库的 Issues 中提交问题
 - 💬 [加入交流群](../README.md#交流群)
 
 ### 4. 提供信息

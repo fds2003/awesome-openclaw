@@ -75,9 +75,6 @@
 | 链接 | 描述 | 状态 | 备注 |
 |------|------|------|------|
 | https://github.com/VoltAgent/awesome-openclaw-skills | Awesome Skills | ✅ 正常 | Skills合集 |
-| https://github.com/xianyu110/clawbot | Clawbot项目 | ✅ 正常 | 历史参考 |
-| https://blog.csdn.net/xianyu120/category_13126767.html | CSDN专栏 | ✅ 正常 | 作者博客 |
-| https://space.bilibili.com/399102586 | B站频道 | ✅ 正常 | 视频教程 |
 
 ### 开放平台
 
@@ -301,7 +298,7 @@ markdown-link-check README.md
 
 | 日期 | 更新内容 | 验证人 |
 |------|---------|--------|
-| 2026-02-14 | 初始版本，验证所有链接 | @xianyu110 |
+| 2026-02-14 | 初始版本，验证所有链接 | - |
 | - | - | - |
 
 ---
@@ -310,7 +307,7 @@ markdown-link-check README.md
 
 如果发现链接失效，请：
 
-1. **提交Issue**：https://github.com/xianyu110/awesome-openclaw-tutorial/issues
+1. **提交Issue**：在仓库的 Issues 中提交
 2. **标题格式**：`[链接失效] 章节名称 - 链接描述`
 3. **提供信息**：
    - 失效链接的完整URL

@@ -369,11 +369,6 @@ skills/bananapro-image-gen/
 - [OpenClaw 官方文档](https://docs.openclaw.ai)
 - [Gemini 3 Pro Image](https://deepmind.google/models/gemini-image/pro/)
 
-## 作者
-
-- GitHub: [@xianyu110](https://github.com/xianyu110)
-- 教程: [OpenClaw 超级个体实战指南](https://github.com/xianyu110/awesome-openclaw-tutorial)
-
 ## 许可证
 
 MIT License

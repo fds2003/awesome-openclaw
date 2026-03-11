@@ -1,0 +1,17 @@
+{
+  "name": "awesome-openclaw-tutorial",
+  "version": "1.0.0",
+  "description": "OpenClaw 教程站（Node.js / Eleventy）",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "dev": "eleventy --serve"
+  },
+  "keywords": ["openclaw", "eleventy", "docs"],
+  "author": "",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
+  }
+}

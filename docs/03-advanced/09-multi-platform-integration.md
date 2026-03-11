@@ -3867,8 +3867,8 @@ openclaw doctor --fix
 #### 安装步骤
 
 ```bash
-# 1. 克隆项目
-git clone https://github.com/xianyu110/openclaw-manager.git
+# 1. 克隆项目（请替换为实际社区项目仓库地址）
+git clone https://github.com/社区项目/openclaw-manager.git
 cd openclaw-manager
 
 # 2. 安装依赖
@@ -4221,7 +4221,7 @@ npm start
 
 ### 9.12.9 项目信息
 
-**GitHub 仓库**：https://github.com/xianyu110/openclaw-manager
+**GitHub 仓库**：请搜索社区内的 openclaw-manager 或同类可视化管理项目
 
 **技术栈**：
 - 前端：React 18 + Tailwind CSS + Vite
@@ -4230,8 +4230,6 @@ npm start
 - 样式：Tailwind CSS
 
 **许可证**：MIT
-
-**作者**：Maynor (@xianyu110)
 
 **贡献**：
 欢迎提交 Issue 和 Pull Request！

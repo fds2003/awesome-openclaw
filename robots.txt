@@ -1,0 +1,12 @@
+# 允许所有爬虫抓取全站（若需屏蔽某路径，可添加 Disallow）
+User-agent: *
+Allow: /
+
+# 可选：屏蔽搜索索引 JSON（避免被当作内容页）
+Disallow: /search.json
+Disallow: /search-index.json
+Disallow: /search-index-expanded.json
+
+# Sitemap：部署后请将下方改为你的站点根地址，例如 https://你的域名.com/sitemap.xml
+# 若已在 _config.yml 中填写 url，可手动改为：Sitemap: https://你的域名/sitemap.xml
+Sitemap: https://example.com/sitemap.xml

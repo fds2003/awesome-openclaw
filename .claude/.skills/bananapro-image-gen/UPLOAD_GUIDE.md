@@ -44,7 +44,7 @@ git add .
 git commit -m "Initial commit: Banana Pro Image Generation Skill"
 
 # 4. 推送到 GitHub
-git remote add origin https://github.com/xianyu110/bananapro-image-gen-skill.git
+git remote add origin https://github.com/你的用户名/你的skill仓库.git
 git branch -M main
 git push -u origin main
 ```
@@ -56,7 +56,7 @@ git push -u origin main
 3. 填写表单：
    - **Skill Name**: bananapro-image-gen
    - **Display Name**: Banana Pro Image Generation
-   - **GitHub URL**: https://github.com/xianyu110/bananapro-image-gen-skill
+   - **GitHub URL**: https://github.com/你的用户名/你的skill仓库
    - **Description**: 使用 Gemini 3 Pro Image 生成图片的 OpenClaw Skill
    - **Category**: Creativity
    - **Tags**: ai, image, generation, gemini, creative
@@ -221,7 +221,7 @@ export NEXTAI_API_KEY="your-api-key-here"
 
 ## 📮 需要帮助？
 
-- GitHub Issues: https://github.com/xianyu110/awesome-openclaw-tutorial/issues
+- 在仓库的 Issues 中提交
 - 社区讨论: https://community.openclaw.ai
 - 邮件: your-email@example.com
 

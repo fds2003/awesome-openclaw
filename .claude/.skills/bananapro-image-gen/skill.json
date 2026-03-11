@@ -4,9 +4,8 @@
   "version": "1.0.0",
   "description": "使用 Gemini 3 Pro Image 生成图片的 OpenClaw Skill，支持白板图、Logo设计、社交媒体配图等多种场景",
   "author": {
-    "name": "xianyu110",
-    "github": "https://github.com/xianyu110",
-    "email": "your-email@example.com"
+    "name": "",
+    "email": ""
   },
   "keywords": [
     "image-generation",
@@ -19,9 +18,9 @@
   ],
   "category": "creativity",
   "license": "MIT",
-  "repository": "https://github.com/xianyu110/awesome-openclaw-tutorial",
-  "homepage": "https://github.com/xianyu110/awesome-openclaw-tutorial/tree/main/.claude/.skills/bananapro-image-gen",
-  "bugs": "https://github.com/xianyu110/awesome-openclaw-tutorial/issues",
+  "repository": "",
+  "homepage": "",
+  "bugs": "",
   "main": "scripts/generate_image.py",
   "dependencies": {
     "python": ">=3.8",

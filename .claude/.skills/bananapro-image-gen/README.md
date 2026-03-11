@@ -2,7 +2,7 @@
 
 > 使用 Gemini 3 Pro Image 生成图片的 AI Skill，支持白板图、Logo设计、社交媒体配图等多种场景。
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/xianyu110/awesome-openclaw-tutorial)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)]
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Compatibility](https://img.shields.io/badge/compatibility-claude--code%20%7C%20cursor%20%7C%20copilot-orange.svg)](SKILL.md)
 
@@ -22,10 +22,10 @@
 
 ```bash
 # 通过 npx（推荐）
-npx skills add xianyu110/awesome-openclaw-tutorial@bananapro-image-gen
+npx skills add 你的用户名/本教程仓库@bananapro-image-gen
 
 # 或手动克隆
-git clone https://github.com/xianyu110/awesome-openclaw-tutorial.git
+git clone https://github.com/你的用户名/本教程仓库.git
 cd .claude/.skills/bananapro-image-gen
 pip install -r requirements.txt
 ```
@@ -125,7 +125,7 @@ python scripts/generate_image.py \
 ## 📚 文档
 
 - [完整文档](SKILL.md) - 详细的使用指南和示例
-- [教程](https://github.com/xianyu110/awesome-openclaw-tutorial) - OpenClaw 超级个体实战指南
+- 本仓库 - OpenClaw 超级个体实战指南
 
 ## 🤝 贡献
 
@@ -134,11 +134,6 @@ python scripts/generate_image.py \
 ## 📄 许可证
 
 MIT License - 详见 [LICENSE](LICENSE)
-
-## 👤 作者
-
-- GitHub: [@xianyu110](https://github.com/xianyu110)
-- 项目: [OpenClaw 超级个体实战指南](https://github.com/xianyu110/awesome-openclaw-tutorial)
 
 ---
 

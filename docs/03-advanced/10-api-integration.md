@@ -33,7 +33,7 @@ OpenClaw支持多种AI绘图服务：
 
 ```bash
 # 克隆技能仓库
-git clone https://github.com/xianyu110/awesome-openclaw-tutorial.git
+git clone https://github.com/你的用户名/本教程仓库.git
 
 # 复制到OpenClaw的skills目录
 cp -r expert-skills-hub/skills/bananapro-image-gen ~/.openclaw/skills/
@@ -45,7 +45,7 @@ pip3 install -r requirements.txt
 **方式2：使用npx命令**
 
 ```bash
-npx skills add https://github.com/xianyu110/awesome-openclaw-tutorial --skill bananapro-image-gen
+npx skills add https://github.com/你的用户名/本教程仓库 --skill bananapro-image-gen
 ```text
 **验证安装：**
 
@@ -2060,7 +2060,7 @@ openclaw tts generate \
 
 ```bash
 # 下载并运行批量安装脚本
-curl -O https://raw.githubusercontent.com/xianyu110/awesome-openclaw-tutorial/main/scripts/install_api_skills.sh
+curl -O https://raw.githubusercontent.com/你的用户名/本教程仓库/main/scripts/install_api_skills.sh
 chmod +x install_api_skills.sh
 
 # 查看使用帮助

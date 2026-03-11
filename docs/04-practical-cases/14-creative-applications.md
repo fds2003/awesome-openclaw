@@ -67,7 +67,7 @@
 
 ```bash
 # 克隆技能仓库
-git clone https://github.com/xianyu110/my-awesome-skills.git
+git clone https://github.com/你的用户名/你的skills仓库.git
 
 # 复制到OpenClaw的skills目录
 cp -r my-awesome-skills/.claude/skills/bananapro-image-gen ~/.openclaw/skills/
@@ -79,7 +79,7 @@ pip3 install -r requirements.txt
 **方式2：使用npx命令安装**
 
 ```bash
-npx skills add https://github.com/xianyu110/my-awesome-skills --skill bananapro-image-gen
+npx skills add https://github.com/你的用户名/你的skills仓库 --skill bananapro-image-gen
 ```text
 **验证安装：**
 

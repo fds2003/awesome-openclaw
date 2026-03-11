@@ -849,7 +849,7 @@ mkdir -p ~/.openclaw/logs
 mkdir -p ~/Documents/openclaw
 
 # 下载配置模板
-curl -o ~/.openclaw/config.json https://raw.githubusercontent.com/xianyu110/awesome-openclaw-tutorial/main/examples/configs/basic-config.json
+curl -o ~/.openclaw/config.json https://raw.githubusercontent.com/你的用户名/本教程仓库/main/examples/configs/basic-config.json
 
 # 提示用户输入API密钥
 echo "请输入你的DeepSeek API密钥："

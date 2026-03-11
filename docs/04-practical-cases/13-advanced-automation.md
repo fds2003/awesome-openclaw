@@ -2484,7 +2484,7 @@ OpenClaw：✅ 研究完成！
 • 官方文档：https://docs.openclaw.ai
 • GitHub：https://github.com/openclaw/openclaw
 • Discord社区：https://discord.gg/openclaw
-• 中文教程：https://github.com/xianyu110/awesome-openclaw-tutorial
+• 本教程（当前仓库）
 
 【相关讨论】
 • X上的热门话题：#OpenClaw

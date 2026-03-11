@@ -27,3 +27,7 @@ openclaw-manager/node_modules/
 # docx临时文件
 docx/.~*.docx
 docx/样章模板*.docx
+
+# Node / Eleventy
+node_modules/
+_site/

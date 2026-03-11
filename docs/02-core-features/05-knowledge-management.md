@@ -309,7 +309,7 @@ OpenClaw可以帮你高效管理GitHub项目。
 **OpenClaw做法**：
 
 ```
-你：帮我分析这个GitHub项目，总结核心信息：https://github.com/xianyu110/awesome-openclaw-tutorial ，
+你：帮我分析这个GitHub项目，总结核心信息：<项目仓库URL>，
 
 OpenClaw：正在分析项目...
 
