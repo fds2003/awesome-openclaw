@@ -353,7 +353,7 @@ grep "upload" ~/.openclaw/logs/audit.log
 
 ## 相关资源
 
-- [第8章：Skills扩展](08-skills-extension/) - Skills使用和管理
+- [第8章：Skills扩展](/docs/03-advanced/08-skills-extension/) - Skills使用和管理
 - [附录F：避坑指南与最佳实践](/appendix/F-best-practices/) - 完整的避坑指南
 - [OpenClaw官方安全公告](https://github.com/openclaw/openclaw/security/advisories)
 
