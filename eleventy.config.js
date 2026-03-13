@@ -27,6 +27,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("favicon.svg");
   eleventyConfig.addPassthroughCopy("googlea535c453d9fb9a0b.html");
   eleventyConfig.addPassthroughCopy("BingSiteAuth.xml");
+  eleventyConfig.addPassthroughCopy("baidu_verify_codeva-8m6t0H0SUb.html");
   eleventyConfig.addPassthroughCopy("docs/images");
 
   // 使用 Nunjucks 处理 Markdown 中的 Liquid 布局名（保留 layout: default）
