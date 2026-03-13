@@ -74,6 +74,7 @@ include:
   - index.md
   - docs
   - appendix
+  - BingSiteAuth.xml  # Bing 站长验证，部署后需可访问 https://你的域名/BingSiteAuth.xml
 
 # Exclude from processing
 exclude:
