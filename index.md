@@ -1,7 +1,7 @@
 ---
 layout: default
 title: OpenClaw 中文教程首页
-description: OpenClaw（龙虾/大龙虾）从零上手：安装配置、飞书企微接入、Skills 扩展、知识库与自动化，70+ 实战案例，最全中文教程与命令速查。
+description: OpenClaw 中文网站与教程：（龙虾/大龙虾）从零上手，安装配置、飞书企微接入、Skills 扩展、知识库与自动化，70+ 实战案例，最全中文教程与命令速查。
 ---
 
 # 🦞 一本书玩转 OpenClaw：超级个体实战指南

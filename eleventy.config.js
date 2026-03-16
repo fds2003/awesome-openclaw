@@ -40,6 +40,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add("*.sh");
   eleventyConfig.ignores.add("scripts");
   eleventyConfig.ignores.add("backups");
+  eleventyConfig.ignores.add("dev-docs");  // 开发/内部文档，不参与站点构建
   eleventyConfig.ignores.add(".claude");
   eleventyConfig.ignores.add(".vscode");
   eleventyConfig.ignores.add(".git");

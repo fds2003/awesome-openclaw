@@ -1,3 +1,8 @@
+---
+title: OpenClaw 飞书 Bot 配置检查清单（流式输出与多 Agent）
+description: OpenClaw 飞书机器人配置步骤检查清单：创建应用、权限、流式输出与多 Agent 配置，避免常见问题。
+---
+
 # 飞书Bot配置检查清单
 
 > ✅ 使用本清单确保飞书Bot配置完整，避免常见问题
