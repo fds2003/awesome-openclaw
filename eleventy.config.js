@@ -13,6 +13,15 @@ module.exports = function (eleventyConfig) {
     return articles.sort((a, b) => (b.date || 0) - (a.date || 0));
   });
 
+  // 为内容中的图片添加懒加载与异步解码，利于 LCP/移动端性能（SEO 框架：产品体验 90+）
+  eleventyConfig.addTransform("imgLazy", function (content, outputPath) {
+    if (!outputPath || !outputPath.endsWith(".html")) return content;
+    return content.replace(
+      /<img(\s)(?![^>]*\bloading=)/gi,
+      "<img$1loading=\"lazy\" decoding=\"async\" "
+    );
+  });
+
   // Sitemap 日期格式 YYYY-MM-DD
   eleventyConfig.addFilter("sitemapDate", (date) => {
     if (!date) return "2026-01-01";
@@ -41,6 +50,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add("scripts");
   eleventyConfig.ignores.add("backups");
   eleventyConfig.ignores.add("dev-docs");  // 开发/内部文档，不参与站点构建
+  eleventyConfig.ignores.add(".cursor");   // Cursor/ECC 规则与技能，不参与站点构建
   eleventyConfig.ignores.add(".claude");
   eleventyConfig.ignores.add(".vscode");
   eleventyConfig.ignores.add(".git");
