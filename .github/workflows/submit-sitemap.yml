@@ -1,0 +1,57 @@
+# 仅在「生产环境部署成功」后向 Google Search Console 提交站点地图（Vercel 等会回写 GitHub Deployment）
+# 需：仓库已连接 Vercel 且会在 GitHub 上产生 Deployment；并配置 GOOGLE_SERVICE_ACCOUNT_KEY
+name: Submit sitemap to Google Search Console
+
+on:
+  deployment_status:
+  workflow_dispatch:
+
+concurrency:
+  group: submit-sitemap-${{ github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  submit-sitemap:
+    runs-on: ubuntu-latest
+    # 手动运行；或 Vercel 生产部署成功（须为 deployment_status 且环境名为 Production/production）
+    if: ${{ github.event_name == 'workflow_dispatch' || (github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success' && (github.event.deployment.environment == 'Production' || github.event.deployment.environment == 'production')) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha || github.sha }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # 部署状态 success 后 CDN/边缘可能仍有数秒～1 分钟延迟，轮询直到线上 sitemap 可访问
+      - name: Wait for live sitemap
+        if: github.event_name == 'deployment_status'
+        env:
+          SITEMAP_URL: ${{ vars.SITEMAP_URL }}
+        run: |
+          set -e
+          U="${SITEMAP_URL:-https://claw.oucloud.top/sitemap.xml}"
+          echo "Waiting for: $U"
+          for i in $(seq 1 72); do
+            if curl -fsS --max-time 20 "$U" | grep -qE '<urlset|<url>'; then
+              echo "Sitemap is live (attempt $i)"
+              exit 0
+            fi
+            echo "Attempt $i: not ready, sleep 5s..."
+            sleep 5
+          done
+          echo "::error::Timeout waiting for sitemap"
+          exit 1
+
+      - name: Submit sitemap via Search Console API
+        env:
+          GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+          SITE_URL: ${{ vars.GSC_SITE_URL }}
+        run: node scripts/submit-sitemap-search-console.mjs

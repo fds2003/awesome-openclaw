@@ -29,6 +29,13 @@ module.exports = function (eleventyConfig) {
     return isNaN(d.getTime()) ? "2026-01-01" : d.toISOString().slice(0, 10);
   });
 
+  // JSON-LD / SEO 用 YYYY-MM-DD（Nunjucks 无 htmlDateString）
+  eleventyConfig.addFilter("seoDate", (date) => {
+    if (!date) return "";
+    const d = date instanceof Date ? date : new Date(date);
+    return isNaN(d.getTime()) ? "" : d.toISOString().slice(0, 10);
+  });
+
   // 直接复制到输出目录
   eleventyConfig.addPassthroughCopy("search-index.json");
   eleventyConfig.addPassthroughCopy("search-index-expanded.json");

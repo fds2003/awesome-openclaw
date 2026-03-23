@@ -19,6 +19,7 @@ description: OpenClaw 中文网站与教程：（龙虾/大龙虾）从零上手
 
 | 文章 | 简介 |
 |------|------|
+| [OpenClaw 使用场景全景：40+ 真实案例导读](docs/articles/OpenClaw使用场景全景-40个真实案例导读/) | 按六大类梳理社区真实用例（社交/创意/DevOps/生产力/研究/金融），附分类长文索引 |
 | [OpenClaw 企业微信：自动销售接待解决方案](docs/articles/OpenClaw企业微信：自动销售接待解决方案/) | 7×24 智能接待、线索入 CRM、预约与人工转接 |
 | [OpenClaw 在微信平台的应用场景与接入方案](docs/articles/OpenClaw在微信平台的应用场景与接入方案/) | 微信生态应用场景与合规接入方案对比 |
 

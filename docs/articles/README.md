@@ -26,4 +26,5 @@
 
 - 本目录下的 `index.md` 是文章列表页，请勿改名或删除。  
 - 列表按 **日期倒序**；未写 `date` 时由脚本用当天日期补全。  
-- 新文章放入后记得运行一次 `node scripts/article-seo.js docs/articles`，再构建，即可在站内展示并参与 SEO。
+- 新文章放入后记得运行一次 `node scripts/article-seo.js docs/articles`，再构建，即可在站内展示并参与 SEO。  
+- 维护者速查示例（**不对外发布**）：见仓库 [`dev-docs/示例-如何写一篇新文章.md`](../dev-docs/示例-如何写一篇新文章.md)。
