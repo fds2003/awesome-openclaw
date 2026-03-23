@@ -3,7 +3,7 @@ layout: default
 title: OpenClaw 使用场景（五）：研究与学习
 description: 财报跟踪、个人 RAG、市场与 MVP 工厂、创意前置验证、语义记忆、arXiv 与 LaTeX 论文工作流等 OpenClaw 研究类场景导读。
 keywords: OpenClaw, RAG, arXiv, LaTeX, 研究, 学习, 语义搜索, 龙虾教程
-date: 2026-03-23
+date: "2026-03-23T14:45:00+08:00"
 ---
 
 # OpenClaw 使用场景（五）：研究与学习

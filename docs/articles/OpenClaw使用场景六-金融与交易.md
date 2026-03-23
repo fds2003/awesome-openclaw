@@ -3,7 +3,7 @@ layout: default
 title: OpenClaw 使用场景（六）：金融与交易
 description: 预测市场类自动化实验场景（Polymarket Autopilot）导读：强调模拟、回测与风险，非投资建议。
 keywords: OpenClaw, Polymarket, 预测市场, 自动化, 风险提示, 龙虾教程
-date: 2026-03-23
+date: "2026-03-23T15:30:00+08:00"
 ---
 
 # OpenClaw 使用场景（六）：金融与交易

@@ -3,7 +3,7 @@ layout: default
 title: OpenClaw 使用场景（一）：社交媒体
 description: Reddit/YouTube 每日摘要、X 账户分析、多源科技资讯、TweetClaw 自动化等 5 类 OpenClaw 社交媒体场景，附社区文档链接与上手提示。
 keywords: OpenClaw, 社交媒体, Reddit, YouTube, X, Twitter, 资讯摘要, 龙虾教程, Skills
-date: 2026-03-23
+date: "2026-03-23T09:45:00+08:00"
 ---
 
 # OpenClaw 使用场景（一）：社交媒体

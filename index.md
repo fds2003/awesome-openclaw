@@ -19,7 +19,13 @@ description: OpenClaw 中文网站与教程：（龙虾/大龙虾）从零上手
 
 | 文章 | 简介 |
 |------|------|
-| [OpenClaw 使用场景全景：40+ 真实案例导读](docs/articles/OpenClaw使用场景全景-40个真实案例导读/) | 按六大类梳理社区真实用例（社交/创意/DevOps/生产力/研究/金融），附分类长文索引 |
+| [OpenClaw 使用场景全景：40+ 真实案例导读](docs/articles/OpenClaw使用场景全景-40个真实案例导读/) | 按社交媒体、创意构建、DevOps、生产力、研究学习、金融交易六大类，梳理社区整理的 OpenClaw 真实使用场景，附分类文章索引与上手路径。 |
+| [OpenClaw 使用场景（一）：社交媒体](docs/articles/OpenClaw使用场景一-社交媒体/) | Reddit/YouTube 每日摘要、X 账户分析、多源科技资讯、TweetClaw 自动化等 5 类 OpenClaw 社交媒体场景，附社区文档链接与上手提示。 |
+| [OpenClaw 使用场景（二）：创意与构建](docs/articles/OpenClaw使用场景二-创意与构建/) | 夜间小应用目标驱动、YouTube 选题流水线、多 Agent 内容工厂、教育游戏全链路、播客制作自动化等 OpenClaw 创意类场景导读。 |
+| [OpenClaw 使用场景（三）：基础设施与 DevOps](docs/articles/OpenClaw使用场景三-基础设施与DevOps/) | 用 n8n Webhook 把凭证隔离在可视化工作流里，以及家庭服务器自愈巡检类 OpenClaw 场景导读。 |
+| [OpenClaw 使用场景（四）：生产力](docs/articles/OpenClaw使用场景四-生产力/) | 从晨间简报、会议纪要、多通道助理、个人 CRM、Second Brain 到本地 CRM 框架等 20 类 OpenClaw 生产力场景导读，附社区文档链接。 |
+| [OpenClaw 使用场景（五）：研究与学习](docs/articles/OpenClaw使用场景五-研究与学习/) | 财报跟踪、个人 RAG、市场与 MVP 工厂、创意前置验证、语义记忆、arXiv 与 LaTeX 论文工作流等 OpenClaw 研究类场景导读。 |
+| [OpenClaw 使用场景（六）：金融与交易](docs/articles/OpenClaw使用场景六-金融与交易/) | 预测市场类自动化实验场景（Polymarket Autopilot）导读：强调模拟、回测与风险，非投资建议。 |
 | [OpenClaw 企业微信：自动销售接待解决方案](docs/articles/OpenClaw企业微信：自动销售接待解决方案/) | 7×24 智能接待、线索入 CRM、预约与人工转接 |
 | [OpenClaw 在微信平台的应用场景与接入方案](docs/articles/OpenClaw在微信平台的应用场景与接入方案/) | 微信生态应用场景与合规接入方案对比 |
 
