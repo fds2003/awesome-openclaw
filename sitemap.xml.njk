@@ -17,4 +17,11 @@ eleventyExcludeFromCollections: true
   </url>
 {% endif %}
 {% endfor %}
+  {# passthroughCopy 等资源不在 collections.all 中，需手写列入 #}
+  <url>
+    <loc>{{ base }}/llms.txt</loc>
+    <lastmod>{{ "" | sitemapNow }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

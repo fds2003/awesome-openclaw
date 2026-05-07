@@ -61,6 +61,7 @@ module.exports = function (eleventyConfig) {
     const d = date instanceof Date ? date : new Date(date);
     return isNaN(d.getTime()) ? "2026-01-01" : d.toISOString().slice(0, 10);
   });
+  eleventyConfig.addFilter("sitemapNow", () => new Date().toISOString().slice(0, 10));
 
   // JSON-LD / SEO 用 YYYY-MM-DD（Nunjucks 无 htmlDateString）
   eleventyConfig.addFilter("seoDate", (date) => {
