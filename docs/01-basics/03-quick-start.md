@@ -2,6 +2,8 @@
 
 > 恭喜你完成了安装！现在开始使用 OpenClaw，体验AI助手的魅力。
 
+> 🔗 **相关阅读**：Web UI 打不开或 Gateway 异常时，回看 [第 2 章：环境搭建](/docs/01-basics/02-installation/)；首次配置模型密钥见 [附录 K：API Key 配置](/appendix/K-api-key-config-guide/)。飞书/企微里对话前需完成 [第 9 章多平台集成](/docs/03-advanced/09-multi-platform-integration/) 与 [飞书 Bot 检查清单](/appendix/J-feishu-checklist/)。常用 CLI 速查 [附录 A](/appendix/A-command-reference/)；工具权限与配对安全见 [OpenClaw 安全指南](/docs/03-advanced/99-security-guide/)。
+
 ## 快速导航
 
 - 🎯 [第一次对话](#第一次对话)

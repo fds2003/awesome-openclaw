@@ -1,3 +1,10 @@
+---
+layout: default
+title: OpenClaw 教程站内搜索指南｜用法与范围
+description: 站内搜索的范围、使用技巧与常见问题；与教程章节 docs/search-guide 为互补入口。
+keywords: OpenClaw 搜索, 站内搜索, 教程检索
+---
+
 # 🔍 搜索功能使用指南
 
 > 本教程的搜索功能专注于标题搜索，帮助你快速找到需要的章节

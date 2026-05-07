@@ -1,3 +1,11 @@
+---
+layout: default
+title: OpenClaw 配置文件结构说明｜全局与 Agent 目录
+description: ~/.openclaw 目录、全局与 Agent 专属配置、认证文件路径说明；规范收录见附录 L。
+keywords: OpenClaw 配置, openclaw.json, Agent 配置, Gateway, 配置文件
+canonical: https://claw.oucloud.top/appendix/L-config-file-structure/
+---
+
 # OpenClaw 配置文件结构完整指南
 
 ## 📁 配置文件目录结构

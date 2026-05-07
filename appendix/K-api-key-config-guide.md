@@ -1,3 +1,10 @@
+---
+layout: default
+title: OpenClaw API Key 配置完整指南｜多方式与优先级
+description: 环境变量、Agent 专属、全局配置、向导等 API Key 配置方式，含验证、排错与安全建议。
+keywords: OpenClaw, API Key, 环境变量, Anthropic, DeepSeek, 多 Agent, 配置优先级
+---
+
 # OpenClaw API Key 配置完整指南
 
 ## 📋 配置方式概览

@@ -4,7 +4,7 @@
 
 ![OpenClaw 安装界面](https://upload.maynor1024.live/file/1771085321300_installation-interface.png)
 
-
+> 🔗 **装好之后**：配置大模型 API 密钥请看 [附录 K：API Key 配置完整指南](/appendix/K-api-key-config-guide/)；若要在手机飞书里使用助手，继续阅读 [第 9 章：多平台集成（飞书 Bot）](/docs/03-advanced/09-multi-platform-integration/#91-飞书bot配置)。Docker 与云服务器段落中的常见问题也可对照 [附录 E：常见问题速查](/appendix/E-common-problems/)。
 
 ## 📋 前提条件与推荐配置
 

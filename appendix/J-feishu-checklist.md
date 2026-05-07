@@ -1,3 +1,10 @@
+---
+layout: default
+title: OpenClaw 飞书 Bot 配置检查清单｜权限与事件订阅
+description: 飞书开放平台应用创建、机器人权限、OpenClaw 渠道配置与联调检查步骤。
+keywords: OpenClaw 飞书, 飞书 Bot, Lark, 流式输出, 事件订阅
+---
+
 # 飞书Bot配置检查清单
 
 > ✅ 使用本清单确保飞书Bot配置完整，避免常见问题

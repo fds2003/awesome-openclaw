@@ -1,3 +1,11 @@
+---
+layout: default
+title: OpenClaw Skills 生态｜内置与 ClawHub 扩展
+description: 内置 Skills、ClawHub 官方与社区 Skills 规模与安装方式；规范收录见附录 N。
+keywords: OpenClaw Skills, ClawHub, 内置技能, clawhub install
+canonical: https://claw.oucloud.top/appendix/N-skills-ecosystem/
+---
+
 # OpenClaw Skills 生态说明
 
 ## 📊 Skills 分类统计（2026年2月）

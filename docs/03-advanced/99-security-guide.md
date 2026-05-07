@@ -2,6 +2,8 @@
 
 > 💡 **本章目标**：了解OpenClaw的安全机制、已知安全事件和最佳实践，保护你的数据和隐私
 
+> 🔗 **相关阅读**：安装与使用 Skills 前请对照 [第 8 章 Skills 扩展](/docs/03-advanced/08-skills-extension/)；Webhook 渠道与令牌不要提交到仓库，配置文件结构见 [附录 L](/appendix/L-config-file-structure/)，密钥管理方式见 [附录 K](/appendix/K-api-key-config-guide/)。IM 配对与群组策略与 [第 9 章多平台集成](/docs/03-advanced/09-multi-platform-integration/) 、[飞书配置清单](/appendix/J-feishu-checklist/) 联动排查。
+
 ---
 
 ## 📋 目录

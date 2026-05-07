@@ -1,3 +1,11 @@
+---
+layout: default
+title: OpenClaw API Key 配置教程｜优先级说明与环境变量
+description: OpenClaw API Key 的多种配置方式、优先级顺序、命令示例与安全建议；规范收录 URL 见附录 K。
+keywords: OpenClaw API Key, 环境变量, Agent 配置, Anthropic, DeepSeek, Moonshot, 配置文件
+canonical: https://claw.oucloud.top/appendix/K-api-key-config-guide/
+---
+
 # OpenClaw API Key 配置完整指南
 
 ## 📋 配置方式概览

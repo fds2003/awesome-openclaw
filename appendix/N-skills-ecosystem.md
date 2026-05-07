@@ -1,3 +1,10 @@
+---
+layout: default
+title: OpenClaw Skills 生态说明｜内置、官方与社区
+description: 内置 Skills、ClawHub 官方包与社区生态规模、查看与安装命令说明。
+keywords: OpenClaw Skills, ClawHub, clawhub, 内置技能
+---
+
 # OpenClaw Skills 生态说明
 
 ## 📊 Skills 分类统计（2026年2月）

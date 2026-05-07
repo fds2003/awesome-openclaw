@@ -1,7 +1,8 @@
 ---
 layout: default
-title: OpenClaw 中文教程首页
-description: OpenClaw 中文网站与教程：（龙虾/大龙虾）从零上手，安装配置、飞书企微接入、Skills 扩展、知识库与自动化，70+ 实战案例，最全中文教程与命令速查。
+title: OpenClaw 中文教程｜安装·飞书接入·Skills·Gateway 实战
+description: OpenClaw（龙虾）中文教程站：本地/Docker 安装、Gateway 与 API Key、飞书/企微/钉钉接入、ClawHub Skills、知识库与自动化；70+ 案例与命令速查，适合从零到进阶。
+keywords: OpenClaw 教程, OpenClaw 飞书配置, OpenClaw 安装, ClawHub, Skills, Gateway, API Key, 龙虾教程
 ---
 
 # 🦞 一本书玩转 OpenClaw：超级个体实战指南
@@ -28,6 +29,18 @@ description: OpenClaw 中文网站与教程：（龙虾/大龙虾）从零上手
 | [OpenClaw 使用场景（六）：金融与交易](docs/articles/OpenClaw使用场景六-金融与交易/) | 预测市场类自动化实验场景（Polymarket Autopilot）导读：强调模拟、回测与风险，非投资建议。 |
 | [OpenClaw 企业微信：自动销售接待解决方案](docs/articles/OpenClaw企业微信：自动销售接待解决方案/) | 7×24 智能接待、线索入 CRM、预约与人工转接 |
 | [OpenClaw 在微信平台的应用场景与接入方案](docs/articles/OpenClaw在微信平台的应用场景与接入方案/) | 微信生态应用场景与合规接入方案对比 |
+
+---
+
+## 🔍 常见需求一键直达（内链）
+
+面向检索与排查时，可直接从这些页面入手（正文与附录互为补充）：
+
+- **OpenClaw 飞书机器人配置 / 事件订阅 / 权限报错**：优先对照 [飞书 Bot 配置检查清单（附录 J）](appendix/J-feishu-checklist/)，再阅读 [第 9 章飞书 Bot 配置小节](docs/03-advanced/09-multi-platform-integration/#91-飞书bot配置)。
+- **OpenClaw API Key 怎么配置（环境变量、多 Agent）**：见 [附录 K：API Key 配置完整指南](appendix/K-api-key-config-guide/)。
+- **Docker 部署、云主机与一键安装**：见 [第 2 章：环境搭建](docs/01-basics/02-installation/)（含 Mac / Windows / Linux / Docker）。
+- **ClawHub、Skills 安装与生态**：见 [第 8 章 Skills 扩展](docs/03-advanced/08-skills-extension/) 与 [附录 N：Skills 生态说明](appendix/N-skills-ecosystem/)。
+- **Gateway 认证、工具 profile、Skills 安全**：见 [OpenClaw 安全指南](docs/03-advanced/99-security-guide/) 与本页下方「版本升级」提示。
 
 ---
 

@@ -1,0 +1,32 @@
+# OpenClaw 中文教程站（claw.oucloud.top）
+
+> 面向 AI 爬虫与助手的站点导航。人类读者请直接访问下方链接。
+
+## 站点定位
+
+开源 AI 智能体网关 **OpenClaw** 的中文教程：安装、Gateway、飞书/企微/钉钉接入、Skills（ClawHub）、知识库与自动化实战。
+
+## 核心入口
+
+- 首页：https://claw.oucloud.top/
+- 教程目录（正文）：https://claw.oucloud.top/docs/01-basics/01-introduction/
+- 文章专栏：https://claw.oucloud.top/docs/articles/
+- 站内搜索：https://claw.oucloud.top/search/
+- 附录（速查）：https://claw.oucloud.top/appendix/A-command-reference/
+
+## 关键页面（高频检索意向）
+
+- 环境搭建与安装：https://claw.oucloud.top/docs/01-basics/02-installation/
+- 快速上手：https://claw.oucloud.top/docs/01-basics/03-quick-start/
+- Skills 扩展：https://claw.oucloud.top/docs/03-advanced/08-skills-extension/
+- 多平台集成（飞书/企微等）：https://claw.oucloud.top/docs/03-advanced/09-multi-platform-integration/
+- 飞书 Bot 配置清单：https://claw.oucloud.top/docs/03-advanced/feishu-checklist/
+- API Key 配置：https://claw.oucloud.top/appendix/K-api-key-config-guide/
+- 配置文件结构：https://claw.oucloud.top/appendix/L-config-file-structure/
+- 安全指南：https://claw.oucloud.top/docs/03-advanced/99-security-guide/
+
+## 官方外链
+
+- OpenClaw 官网：https://openclaw.ai
+- 官方文档：https://docs.openclaw.ai
+- ClawHub：https://clawhub.ai

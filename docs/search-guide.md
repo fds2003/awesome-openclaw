@@ -1,3 +1,11 @@
+---
+layout: default
+title: OpenClaw 中文教程站内搜索怎么用｜标题检索说明
+description: 本站搜索范围、使用方式与技巧说明；与附录 M 为同源内容的教程入口。
+keywords: OpenClaw 搜索, 站内搜索, 教程检索, 标题搜索
+canonical: https://claw.oucloud.top/appendix/M-search-guide/
+---
+
 # 🔍 搜索功能使用指南
 
 > 本教程的搜索功能专注于标题搜索，帮助你快速找到需要的章节

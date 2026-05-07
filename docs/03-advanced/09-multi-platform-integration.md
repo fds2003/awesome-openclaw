@@ -1,11 +1,14 @@
 ---
-title: OpenClaw 飞书/企微/钉钉/QQ 接入（流式输出与多 Agent）
-description: OpenClaw 飞书 Bot 配置、流式输出(streaming)与多 Agent 配置，Lark 集成说明。含企微、钉钉、QQ 接入，最全中文教程。
+title: OpenClaw 飞书/企微/钉钉/QQ 接入教程｜流式输出与多 Agent
+description: OpenClaw 接入飞书 Bot（Lark）、企业微信、钉钉、QQ：凭证配置、流式输出、多账号与多 Agent、配对与排错；配合附录 J 清单与安全指南使用。
+keywords: OpenClaw 飞书, Lark Bot, 企业微信机器人, 钉钉机器人, Gateway, 多 Agent, 流式输出
 ---
 
 # 第9章 多平台集成
 
 > 💡 **本章目标**：学会将OpenClaw接入飞书、企业微信、钉钉、QQ等国内主流平台，实现随时随地使用AI助手。飞书作为最现代化、开发友好的平台，将优先介绍。
+
+> 🔗 **配置前推荐阅读**：先按 [飞书 Bot 配置检查清单](/appendix/J-feishu-checklist/) 逐项勾选应用与权限；模型与渠道凭证请参考 [API Key 配置完整指南](/appendix/K-api-key-config-guide/)；Webhook、令牌与第三方 Skills 的安全边界见 [OpenClaw 安全指南](/docs/03-advanced/99-security-guide/)。
 
 ## 📱 本章内容
 

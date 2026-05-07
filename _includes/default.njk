@@ -11,7 +11,10 @@
   <meta name="keywords" content="{{ kw }}">
   {% endif %}
   <meta name="google-site-verification" content="UTCzdQSwAb2NLYctHtbLmjVYvm-mxd2_jnQG">
-  {% if site.url %}
+  {% set canonUrl = canonical or canonicalUrl %}
+  {% if canonUrl %}
+  <link rel="canonical" href="{{ canonUrl }}">
+  {% elif site.url %}
   <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace('/index.html','/') }}">
   {% endif %}
 
@@ -19,7 +22,9 @@
   <meta property="og:site_name" content="{{ site.title | e }}">
   <meta property="og:title" content="{{ (title or site.title) | e }}">
   <meta property="og:description" content="{{ (description or site.description) | e }}">
-  {% if site.url %}
+  {% if canonUrl %}
+  <meta property="og:url" content="{{ canonUrl }}">
+  {% elif site.url %}
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url | replace('/index.html','/') }}">
   {% endif %}
   <meta property="og:type" content="{% if page.url == '/' or page.url == '/index.html' %}website{% else %}article{% endif %}">
@@ -56,7 +61,7 @@
     "@type": "TechArticle",
     "headline": "{{ title | e }}",
     "description": "{{ (description or site.description) | e }}",
-    "url": "{{ site.url or '' }}{{ site.baseurl or '' }}{{ page.url | replace('/index.html','/') }}",
+    "url": "{% if canonUrl %}{{ canonUrl }}{% else %}{{ site.url or '' }}{{ site.baseurl or '' }}{{ page.url | replace('/index.html','/') }}{% endif %}",
     "inLanguage": "{{ site.lang or 'zh-CN' }}"{% if page.date and (page.date | seoDate) %},
     "datePublished": "{{ page.date | seoDate }}",
     "dateModified": "{{ page.date | seoDate }}"{% endif %},

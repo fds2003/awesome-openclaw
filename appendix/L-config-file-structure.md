@@ -1,3 +1,10 @@
+---
+layout: default
+title: OpenClaw 配置文件结构完整指南｜目录与字段说明
+description: ~/.openclaw 目录结构、全局与 Agent 配置、认证文件路径与常用字段说明。
+keywords: OpenClaw, openclaw.json, 配置文件, Agent, Gateway, 认证
+---
+
 # OpenClaw 配置文件结构完整指南
 
 ## 📁 配置文件目录结构
